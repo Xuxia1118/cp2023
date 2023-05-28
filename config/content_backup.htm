@@ -1,10 +1,40 @@
 <h1>About</h1>
+<p>利用已經帶有 Brython 執行環境的倉儲, 在設定學員 Github Classroom 首次作業時, 即經由 template 置入, 因此學員只要:</p>
+<p>利用學校 email 帳號, 建立 Github 帳號, 以英文姓名縮寫加上一組數字, 選擇最短帳號名稱 例如: jfk40723199, jfk 為其自選的姓名縮寫, 而隨後則加上各自的學號.</p>
+<p>擁有 Github 帳號後, 即可透過 Github Classroom assignment 連結取得作業倉儲, 自行在倉儲中設定 Github Pages 後, 即可啟用作業網站 (以下<span style="background-color: #ffff00;">所謂網站均指靜態網站</span>, 而用來編輯網站內容的<span style="background-color: #ffff00;">動態網站, 則統稱為網際內容編輯器</span>, 使用動態網站的目的在編輯靜態網站的內容). 網站內容經過編輯之後, 必須建立新的網站內容 (使用 generate_pages), 然後將新的網站內容更新到對應的 Github 倉儲中 (稱為改版, 其過程經歷 git add, git commit 與 git push 等階段).</p>
+<p>git 為分散式版次管理系統工具.</p>
+<p>git add</p>
+<p>git commit</p>
+<p>git push</p>
+<hr/>
 <p>利用 Github Classroom 給每一位學員一個倉儲, a.k. (also known as) 網站 (靜態與動態)</p>
 <p>每四位學員一組建立一個協同倉儲, a.k. 協同網站 (靜態與動態)</p>
 <p>靜態網站: Github Pages, Nginx (under public_html) 或 Fossil SCM (under documentation)</p>
 <p>動態網站: localhost, replit or Ubuntu server</p>
 <p>repo: <a href="https://github.com/mdecycu/cp2023">https://github.com/mdecycu/cp2023</a></p>
-<p>site: <a href="https://mde.tw/cp2023">https://mde.tw/cp2023</a></p><h1>Computer</h1>
+<p>site: <a href="https://mde.tw/cp2023">https://mde.tw/cp2023</a></p><h2>git commands</h2>
+<h3>git add</h3>
+<p>詢問 <a href="https://openai.com/blog/chatgpt">ChatGPT</a>:</p>
+<p style="padding-left: 30px;"><span style="background-color: #ccffcc;">如何向初學者說明 Git 指令中的 git add?</span></p>
+<p>當向初學者解釋 Git 指令中的 "git add" 時，可以使用以下方式進行說明：<br/><br/>"git add" 是 Git 版本控制系統中的一個指令，它的主要功能是將文件的更改加入到 Git 的暫存區（或稱為索引）中。在 Git 中，暫存區是一個重要的概念，它允許你將要提交的文件更改分開處理。<br/><br/>以下是一個對 "git add" 的解釋：<br/><br/>1. "git add" 是一個用於指示 Git 追蹤和紀錄文件更改的指令。<br/>2. 當你對文件做出修改後，Git 並不會自動將這些更改紀錄下來。相反，你需要使用 "git add" 將更改添加到暫存區。<br/>3. 暫存區是一個中間階段，它允許你選擇性地將特定文件或特定文件的更改紀錄下來，而不是將所有更改都直接提交到 Git 儲存庫。<br/>4. 使用 "git add" 指定要加入暫存區的文件或文件夾，例如 "git add filename" 或 "git add foldername"。<br/>5. 一旦你使用 "git add" 將文件更改添加到暫存區，Git 就會開始跟蹤這些更改，並準備將它們包含在下一次的提交中。<br/><br/>簡而言之，"git add" 是一個將文件更改紀錄下來並加入到 Git 暫存區的指令。這樣可以讓你選擇性地將特定的更改提交到版本控制系統中，而不是一次性提交所有更改。這樣可以提供更大的靈活性和精細的控制，並使版本控制更具效率。</p>
+<p>再問:</p>
+<p style="padding-left: 30px;"><span style="background-color: #ccffcc;">何謂 Git 暫存區（或稱為索引）?</span></p>
+<p>Git 暫存區（或稱為索引）是 Git 版本控制系統中的一個重要概念，它在版本控制的過程中扮演了關鍵的角色。以下是對 Git 暫存區的解釋：<br/><br/>1. 暫存區是一個位於 Git 儲存庫中的中間區域。它用於暫時存放文件的更改，這些更改將在下一次提交（commit）時納入版本控制。<br/>2. 當你對文件進行修改時，Git 不會自動將這些更改紀錄下來。相反，你需要使用 "git add" 將更改添加到暫存區。<br/>3. 暫存區可以理解為一個緩衝區，它允許你選擇性地將特定文件或特定文件的更改分開處理，而不是將所有更改都直接提交到儲存庫。<br/>4. 在進行 "git commit" 提交操作時，Git 會將暫存區中的文件快照（snapshot）記錄為一個新的提交。這樣的好處是你可以按照需要對更改進行分組，而不必一次性提交所有更改。<br/>5. 使用暫存區可以提供更大的靈活性和精細的控制，因為你可以檢查即將提交的更改，並在提交之前對其進行調整或分離。<br/><br/>簡而言之，暫存區是 Git 版本控制系統中用於存放即將提交的文件更改的區域。它允許你選擇性地將特定文件或特定文件的更改紀錄下來，並在進行提交之前對其進行調整。這樣的機制提供了更大的彈性和細粒度的控制，幫助你更有效地管理和追蹤文件的變更。</p>
+<p>再問:</p>
+<p style="padding-left: 30px;"><span style="background-color: #ccffcc;">Git 暫存區是在倉儲的哪個地方, 資料會一直存在還只是暫存?</span></p>
+<p>Git 暫存區（或稱為索引）是存放在 Git 儲存庫中的一個特殊文件，而不是存放在特定的目錄中。它是儲存庫的一部分，位於 ".git" 目錄中。暫存區本身並不是一個單獨的物理位置，而是儲存庫中的一個特定狀態。<br/><br/>資料在暫存區中只是暫時存在，並不會永久保存。當你對文件進行 "git add" 操作，Git 會將相應的更改紀錄到暫存區中。這些更改在提交之前只存在於暫存區，並且可以隨時進行修改或取消。<br/><br/>一旦你執行 "git commit" 命令提交更改，Git 將會根據暫存區中的內容創建一個新的提交（commit），並將該提交保存到儲存庫的歷史記錄中。這樣的提交會持久保存，成為了儲存庫的一部分。暫存區在每次提交後都會被清空，準備接收下一次更改。<br/><br/>因此，暫存區是一個用於暫時保存更改的區域，當你準備好提交這些更改時，它們將被永久記錄到儲存庫中。資料在暫存區中並不是永久存在的，而是在提交前的過程中的一個臨時階段。</p>
+<p>再問:</p>
+<p style="padding-left: 30px;"><span style="background-color: #ccffcc;">何謂提交?</span></p>
+<p>在版本控制系統（如Git）中，"提交"（commit）是指將文件或代碼更改保存到儲存庫的歷史記錄中的操作。提交創建了一個新的快照（snapshot），記錄了儲存庫在某個時間點上的狀態。以下是對提交的解釋：<br/><br/>1. 提交是版本控制系統中的重要概念，它表示你希望將文件或代碼更改永久地保存到儲存庫中。<br/>2. 當你對文件進行修改並滿意結果後，可以使用 "git add" 命令將更改添加到 Git 的暫存區（或索引）中。<br/>3. 一旦你將所有需要提交的更改都添加到暫存區中，可以使用 "git commit" 命令來創建一個新的提交。<br/>4. 提交是一個具有唯一標識（commit hash）的快照，它記錄了儲存庫在提交時的狀態，包括被更改的文件和它們的內容。<br/>5. 每個提交都可以包含一個相關的提交消息（commit message），用於描述這個提交所做的更改、修復的問題或任何相關信息。<br/>6. 提交的歷史記錄是順序的，每次提交都建立在前一個提交的基礎之上，形成一個有向無環圖（DAG）結構。<br/>7. 提交的歷史記錄使你能夠追蹤和恢復過去的更改，合作和協調工作，以及進行分支和合併操作等。<br/><br/>提交在版本控制中扮演著關鍵的角色，它確保了文件更改的持久性和可追蹤性。通過進行提交，你可以記錄並保留儲存庫在不同時間點上的狀態，並隨時查看、比較和回溯到過去的版本。</p>
+<p>再問:</p>
+<p style="padding-left: 30px;"><span style="background-color: #ccffcc;">當使用者執行 git add . 之後,  git.exe 具體做了甚麼動作?</span></p>
+<p>當使用者執行 "git add ." 命令後，"git.exe" 會執行以下動作來處理這個指令：<br/><br/>1. "git.exe" 會分析目前工作目錄中的所有更改，包括修改的文件和新建的文件。<br/>2. 它會將這些更改的文件路徑和內容紀錄到 Git 儲存庫的暫存區中。暫存區實際上是一個特殊的 Git 檔案，位於 ".git" 目錄中，用於記錄即將提交的更改。<br/>3. 如果有新的文件被添加到工作目錄中，它們將被添加到暫存區。對於已經存在的文件，它會比對工作目錄中的版本和暫存區中的版本之間的差異，並將這些差異紀錄到暫存區中。<br/>4. "git.exe" 會為每個被添加到暫存區的文件生成一個 SHA-1 雜湊值，用於唯一識別文件的內容。<br/>5. 在將文件的內容和元資料紀錄到暫存區後，"git.exe" 完成了 "git add ." 的操作。<br/><br/>總結來說，"git add ." 命令告訴 "git.exe" 將所有更改的文件路徑和內容紀錄到 Git 的暫存區中，準備進行提交。這樣可以將更改分開處理，提供了更大的彈性和控制，讓你能夠選擇性地提交特定的更改，而不是一次性提交所有更改。</p>
+<p>再問:</p>
+<p style="padding-left: 30px;"><span style="background-color: #ccffcc;">甚麼是文件的 SHA-1 雜湊值?</span></p>
+<p>SHA-1（Secure Hash Algorithm 1）雜湊值是一種密碼學演算法，用於將數據（例如文件或消息）轉換為固定長度的唯一字串。在 Git 中，文件的 SHA-1 雜湊值是使用 SHA-1 算法計算出的 40 個字符的字串，用於唯一識別文件的內容。<br/><br/>以下是文件的 SHA-1 雜湊值的一些特點和作用：<br/><br/>1. 唯一性：SHA-1 算法通過將文件的內容轉換為唯一的雜湊值，確保不同文件具有不同的雜湊值。即使文件的內容只有微小的差異，其雜湊值也會完全不同。<br/>2. 固定長度：SHA-1 雜湊值始終為 40 個字符，無論文件的大小。這使得雜湊值的長度在不同大小的文件中保持一致。<br/>3. 安全性：SHA-1 是一個具有強大加密性能的雜湊算法。它對於碰撞（collision）攻擊的抵抗力相對較強，碰撞攻擊是指找到兩個不同的文件，它們的雜湊值相同。然而，由於 SHA-1 已經被認為不再足夠安全，因此在某些安全敏感的應用中已經被更強的雜湊算法（如 SHA-256）所取代。<br/><br/>在 Git 中，每個文件的內容都會被計算出一個唯一的 SHA-1 雜湊值。這個雜湊值用於識別文件，確保文件的完整性和不易被篡改。在儲存庫中，Git 使用這些雜湊值來追蹤文件的歷史、比較文件的更改，以及進行版本控制操作。</p>
+<p>再問:</p>
+<p style="padding-left: 30px;">如何說明密碼學演算法?</p>
+<p></p><h1>Computer</h1>
 <p>Physical and Virtual PC (<a href="https://www.virtualbox.org/">Virtualbox</a>)</p>
 <p>Operating Systems:</p>
 <p style="padding-left: 30px;">Windows</p>
@@ -308,10 +338,16 @@ doc["aitetris"].bind("click", aitetris.do)
 <p><!-- Brython 程式執行的結果, 都以 brython_div1 作為切入位置 --></p>
 <div id="brython_div2"></div>
 <!-- editor2 結束 --><hr/><h1>Python</h1>
-<p><a href="https://do1.dr-chuck.com/pythonlearn/EN_us/pythonlearn.pdf">https://do1.dr-chuck.com/pythonlearn/EN_us/pythonlearn.pdf</a> </p>
-<p><a href="https://python.swaroopch.com/">https://python.swaroopch.com/</a> </p>
-<p><a href="https://github.com/wenbindu/ThinkPython2-CN">https://github.com/wenbindu/ThinkPython2-CN</a> </p>
-<p><a href="https://automatetheboringstuff.com/2e/chapter0/">https://automatetheboringstuff.com/2e/chapter0/</a> </p><h1>ANSI C</h1>
+<p><a href="https://do1.dr-chuck.com/pythonlearn/EN_us/pythonlearn.pdf">https://do1.dr-chuck.com/pythonlearn/EN_us/pythonlearn.pdf</a></p>
+<p><a href="https://python.swaroopch.com/">https://python.swaroopch.com/</a></p>
+<p><a href="https://github.com/wenbindu/ThinkPython2-CN">https://github.com/wenbindu/ThinkPython2-CN</a></p>
+<p><a href="https://automatetheboringstuff.com/2e/chapter0/">https://automatetheboringstuff.com/2e/chapter0/</a></p>
+<p>Flask based:</p>
+<p style="padding-left: 30px;"><a href="https://github.com/mdecycu/cmsimde">https://github.com/mdecycu/cmsimde</a></p>
+<p>PyQt based:</p>
+<p style="padding-left: 30px;"><a href="https://github.com/leo-editor/leo-editor">https://github.com/leo-editor/leo-editor</a> </p>
+<p style="padding-left: 30px;"><a href="https://github.com/KmolYuan/Pyslvs-UI">https://github.com/KmolYuan/Pyslvs-UI</a> </p>
+<p style="padding-left: 30px;"></p><h1>ANSI C</h1>
 <p><a href="https://www.learn-c.org/">https://www.learn-c.org/</a></p>
 <p><a href="https://www.programiz.com/c-programming">https://www.programiz.com/c-programming</a></p>
 <p>Arduino:</p>
