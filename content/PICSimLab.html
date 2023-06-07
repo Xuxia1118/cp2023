@@ -2,6 +2,7 @@
         <head>
         <title>cp2023</title>
         <meta charset="utf-8">
+<meta property="head" content="H2">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700,900" rel="stylesheet">
         <link rel="stylesheet" href="./../cmsimde/static/chimper/fonts/icomoon/style.css">
@@ -94,6 +95,7 @@ img.add_border {
 </head>
 <body>
 <div class='container'><nav>
+        
     <div class="site-wrap">
 
     <div class="site-mobile-menu">
@@ -139,4 +141,72 @@ img.add_border {
           </div>
           
         </header>
-    </nav><section><h1>Site Map</h1><div id="tipue_search_content"></div><ul><li><a href='About.html'>About</a><ul><li><a href='github.html'>github</a><ul><li><a href='Github Pages.html'>Github Pages</a></li></ul><li><a href='git commands.html'>git commands</a><ul><li><a href='git add.html'>git add</a></li></ul><li><a href='Replit.html'>Replit</a></li></ul><li><a href='Computer.html'>Computer</a><li><a href='Javascript.html'>Javascript</a><li><a href='Brython.html'>Brython</a><li><a href='Python.html'>Python</a><ul><li><a href='Mojo.html'>Mojo</a></li></ul><li><a href='ANSI C.html'>ANSI C</a><ul><li><a href='PICSimLab.html'>PICSimLab</a></li></ul></section></div></body></html>
+    <div id="tipue_search_content">ANSI C << <a href='ANSI C.html'>Previous</a> <br /><h1>PICSimLab</h1>
+<p><a href="https://www.youtube.com/watch?v=be96Ds8umig">https://www.youtube.com/watch?v=be96Ds8umig</a></p>
+<h4>Arduino</h4>
+<p><a href="https://github.com/lcgamboa/picsimlab">https://github.com/lcgamboa/picsimlab</a> Programmable IC Simulator Laboratory</p>
+<p><a href="https://www.arduino.cc/en/software">https://www.arduino.cc/en/software</a> Arduino IDE</p>
+<p><a href="https://com0com.sourceforge.net/">https://com0com.sourceforge.net/</a> Null-modem Emulator</p>
+<p>PICSimLab 模擬 Arduino Uno (COM6) 與 Stepper Motor:</p>
+<p><img alt="" height="270" src="./../images/picsimlab_arduino_uno.gif" width="400"/></p>
+<p><img caption="false" height="400" src="./../images/picsimlab_stepper_motor.gif" width="249"/></p>
+<p>透過 PICSimLab Pin Viewer, 將 PB0/8, PB1/~9, PB2/~10 與 PB3/~11 與 Stepper Motor 接線.</p>
+<p><img alt="" height="232" src="./../images/picsimlab_pin_viewer.gif" width="400"/></p>
+<p>透過 com0com 模擬 COM6 &lt;-&gt; COM4 連線.</p>
+<p><img alt="" height="327" src="./../images/com0com_setup.png" width="400"/></p>
+<p>Arduino IDE 將 Stepper Motor 控制程式編譯後透過 COM4 經由 com0com 將程式經由 COM6 上傳到 Virtual Arduino Uno board.</p>
+<p><img alt="" height="302" src="./../images/arduino_ide.png" width="400"/></p>
+<p>接著希望可以利用 CoppeliaSim zmqRemoteAPI Python 讀取 PICSimLab 控制 Stepper Motor 的資料, 用來同步控制位於 CoppeliaSim 場景中的 Virtual Stepper Motor.</p>
+<p>Reference:</p>
+<p style="padding-left: 30px;"><a href="https://link.springer.com/chapter/10.1007/978-3-030-82544-7_24">HoRoSim, a Holistic Robot Simulator: Arduino Code, Electronic Circuits and Physics</a> (<a href="https://link.springer.com/content/pdf/10.1007/978-3-030-82544-7_24.pdf">pdf</a>)</p>
+<p style="padding-left: 30px;"><a href="https://github.com/scrum-1/horosim">scrum-1/horosim (github.com)</a></p><br />ANSI C << <a href='ANSI C.html'>Previous</a> </div>
+        
+    <!-- footer -->
+      <div class="container">
+        <div class="row pt-3 mx-auto">
+            <p>
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank" >Colorlib</a>
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            </p>
+        </div>
+      </div>
+    <!-- for footer -->
+    
+        </div> <!-- for site wrap -->
+            <!-- <script src="../cmsimde/static/chimper/js/jquery-3.3.1.min.js"></script> -->
+            <script src="../cmsimde/static/chimper/js/jquery-migrate-3.0.1.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery-ui.js"></script>
+            <script src="../cmsimde/static/chimper/js/popper.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/bootstrap.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/owl.carousel.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery.stellar.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery.countdown.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery.magnific-popup.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/bootstrap-datepicker.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/aos.js"></script>
+            <!--
+            <script src="../cmsimde/static/chimper/js/typed.js"></script>
+                    <script>
+                    var typed = new Typed('.typed-words', {
+                    strings: ["Web Apps"," WordPress"," Mobile Apps"],
+                    typeSpeed: 80,
+                    backSpeed: 80,
+                    backDelay: 4000,
+                    startDelay: 1000,
+                    loop: true,
+                    showCursor: true
+                    });
+                    </script>
+            -->
+            <script src="../cmsimde/static/chimper/js/main.js"></script>
+        
+<!-- 啟用 LaTeX equations 編輯 -->
+  <!-- <script>
+  MathJax = {
+    tex: {inlineMath: [['$', '$'], ['\(', '\)']]}
+  };
+  </script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>-->
+    </body></html>
+        
