@@ -1,5 +1,5 @@
 <h1>About</h1>
-<p>本課程為機械設計工程系大一的計算機程式課程, 課程目標在教導學員如何利用網站整理與機械設計相關的資訊, 直接在網站與伺服器中編寫簡單的 Javascript、Brython、Python 與 C 程式, 目的是能在隨後的網際內容管理、電腦輔助設計與實習以及協同產品設計實習等課程中加以應用.</p>
+<p>本課程為機械設計工程系大一的計算機程式課程, 課程目標在教導學員如何利用網站整理與機械設計相關的資訊, 並能直接在網站與伺服器中編寫簡單的 Javascript、Brython、Python 與 C 程式, 目的是能在隨後的網際內容管理、電腦輔助設計與實習以及協同產品設計實習等課程中加以應用.</p>
 <p>學員主要網站:</p>
 <p style="padding-left: 30px;">個人網站: github_帳號.github.io (<a href="https://pages.github.com/">Github Pages</a>)</p>
 <p style="padding-left: 30px;">分組網站: 由 Github Classroom 指定的分組作業網站</p>
@@ -72,11 +72,14 @@
 <p>登入 Replit 後, 設法建立一個倉儲與遠端 Github 上的空倉儲同步.</p>
 <p>為確保使用 "main" 作為主分支名稱，可以在 "git init" 之後加上 "git branch -m main" 指令。這將會將預設的分支名稱從 "master" 改為 "main"。操作流程如下：<br/><br/>1. 在 Replit 的終端機（Terminal）中，確定您目前所在的目錄是您想要作為 Git 倉儲的目錄。如果不是，您可以使用 "cd" 指令切換到正確的目錄。<br/><br/>2. 初始化 Git 倉儲：<br/>   - 執行指令 "git init"：這會在目前的目錄下初始化一個新的 Git 倉儲。<br/><br/>3. 將預設分支名稱改為 "main"：<br/>   - 執行指令 "git branch -m main"：這將把預設分支從 "master" 改為 "main"。<br/><br/>4. 連結到 GitHub 倉儲：<br/>   - 在 GitHub 上創建一個空的倉儲（Repository），並取得該倉儲的 URL。<br/>   - 在終端機中，執行指令 "git remote add origin &lt;GitHub倉儲URL&gt;"：這會將您的本地倉儲與 GitHub 倉儲連結起來。<br/><br/>5. 設定提交身分：<br/>   - 在 Replit 的右側窗格中，點擊「Secrets」選項卡。<br/>   - 在「Environment variables」區域，設定一個名為 "GIT_COMMITTER_NAME" 的變數，並設定您的名字。<br/>   - 設定一個名為 "GIT_COMMITTER_EMAIL" 的變數，並設定您的郵件地址。<br/><br/>6. 將本地的更改提交到 GitHub：<br/>   - 執行指令 "git add ."：將所有更改添加到暫存區。<br/>   - 執行指令 "git commit -m "Initial commit""：將更改提交到本地儲存庫。<br/>   - 執行指令 "git push -u origin main"：將本地的更改推送到 GitHub 倉儲。<br/><br/>現在，您的本地 Git 倉儲和 GitHub 上的倉儲已經連結起來，並且已設定提交身分，同時使用 "main" 作為主分支名稱。您可以在 Replit 上進行更改、提交和推送，並保持與 GitHub 上的倉儲同步。</p>
 <h2>英文單字</h2>
-<p>2016 年出版的 <a href="https://link.springer.com/book/10.1007/978-981-10-3277-6">Programming with Python</a><span> </span>教科書中收集 2244 個英文<a href="/downloads/words_2016_programming_with_python.txt">單字出現次數</a>, 以及各單字的<a href="http://wcm.cycu.org:88/github/cp2021/downloads/textbook_vocabulary.txt">中英文說明</a>.</p>
+<p>2016 年出版的 <a href="https://link.springer.com/book/10.1007/978-981-10-3277-6">Programming with Python</a><span> </span>書中收集 2244 個英文<a href="/downloads/words_2016_programming_with_python.txt">單字出現次數</a>, 以及各單字的<a href="/downloads/words_2016_programming_with_python.html">查詢頁面</a>.</p>
 <p>從英文教科書中統計各單字出現字數的程式:</p>
 <p>先利用<span> <a href="https://gist.githubusercontent.com/mdecycu/59f3b5fc64761e588448816ca66efbaf/raw/831465f6567763241b5e35bd74f91d2bda170f7f/extract_text_from_pdf_file.py">extract_text_from_pdf_file.py</a> </span>將 pdf 檔案中的 text 取出.</p>
 <p>然後再利用<span> <a href="https://gist.githubusercontent.com/mdecycu/59f3b5fc64761e588448816ca66efbaf/raw/831465f6567763241b5e35bd74f91d2bda170f7f/check_vocabulary_from_cdict_net.py">check_vocabulary_from_cdict_net.pdf</a> </span>查詢各英文單字的中文與英文解釋.</p>
-<p>假如導入<span> </span><a href="https://gist.githubusercontent.com/mdecourse/0abe3607fddc69b36be50db7c7962368/raw/6dc6696adf36eb0352fdadffae8680a764ec1ab6/pybean.py">pybean.py</a><span> </span>與<span> </span><a href="https://www.sqlite.org/">SQLite</a><span> </span>資料庫, 則可以利用<span> </span><a href="https://gist.githubusercontent.com/mdecourse/0abe3607fddc69b36be50db7c7962368/raw/6dc6696adf36eb0352fdadffae8680a764ec1ab6/check_dictionary_save_into_sqlite.py">check_dictionary_save_into_sqlite.py</a><span> </span>將 10821 個常見的英文單字的中英文說明與例句存入資料庫 (<a href="http://wcm.cycu.org:88/github/cp2021/downloads/database/cp2021_textbook_vocabulary_10821.sqlite">cp2021_textbook_vocabulary_10821.sqlite</a>).</p><h1>Computer</h1>
+<p>假如導入<span> </span><a href="https://gist.githubusercontent.com/mdecourse/0abe3607fddc69b36be50db7c7962368/raw/6dc6696adf36eb0352fdadffae8680a764ec1ab6/pybean.py">pybean.py</a><span> </span>與<span> </span><a href="https://www.sqlite.org/">SQLite</a><span> </span>資料庫, 則可以利用<span> </span><a href="https://gist.githubusercontent.com/mdecycu/59f3b5fc64761e588448816ca66efbaf/raw/9689aba25d5d89e1c5ab81713100db1c8fd454e3/check_dictionary_save_into_sqlite.py">check_dictionary_save_into_sqlite.py</a><span> </span>將 10821 個常見的英文單字的中英文說明與例句存入資料庫 (<a href="/downloads/cp2021_textbook_vocabulary_10821.sqlite">cp2021_textbook_vocabulary_10821.sqlite</a>).</p>
+<hr/>
+<p>2015 年出版的 <a href="https://link.springer.com/book/10.1007/978-1-4842-1085-7">Beginning Windows 10</a> 書中收集的 3264 個<a href="/downloads/words_2015_beginning_windows_10.txt">英文單字出現次數</a>與各單字的<a href="/downloads/words_2015_beginning_windows_10.html">查詢頁面</a>.</p>
+<p>2022 年出版的 <a href="https://link.springer.com/book/10.1007/978-1-4842-8035-5">Windows 11 Made Easy</a> 書中收集的 1432 <span>個</span><a href="/downloads/words_2022_windows_11_made_easy.txt">英文單字出現次數</a><span>與各單字的</span><a href="/downloads/words_2022_windows_11_made_easy.html">查詢頁面</a><span>.</span></p><h1>Computer</h1>
 <p>Physical and Virtual PC (<a href="https://www.virtualbox.org/">Virtualbox</a>)</p>
 <p>Operating Systems:</p>
 <p style="padding-left: 30px;">Windows</p>
@@ -100,11 +103,11 @@
 <p style="padding-left: 30px;">web browser (www servers in IPv4 or(and) IPv6, protocol in http or https)</p>
 <p style="padding-left: 30px;">program execution (set http_proxy and https_proxy environment variables)</p>
 <p style="padding-left: 30px;">SSH to remote server (through proxy server or not through proxy server)</p>
-<h2>Ubuntu</h2>
-<p><a href="https://en.wikipedia.org/wiki/Ubuntu">https://en.wikipedia.org/wiki/Ubuntu</a></p>
+<p><a href="https://link.springer.com/book/10.1007/978-1-4302-6371-5">2016 Practical IPv6 for Windows Administrators</a></p>
+<p><a href="https://link.springer.com/book/10.1007/978-1-4842-6038-8">2020 Learn Windows Subsystem for Linux</a></p><h2>Ubuntu</h2>
+<p><a href="https://en.wikipedia.org/wiki/Ubuntu">https://en.wikipedia.org/wiki/Ubuntu</a> (Debian based)</p>
 <p>Alternatives:</p>
-<p style="padding-left: 30px;"><a href="https://almalinux.org/">https://almalinux.org/</a></p>
-<h1>Javascript</h1>
+<p style="padding-left: 30px;"><a href="https://almalinux.org/">https://almalinux.org/</a> (Redhat based)</p><h1>Javascript</h1>
 <p>瀏覽器就是你的電腦程式環境</p>
 <p><a href="http://jsforcats.com/">http://jsforcats.com/</a> (貓咪學 JavaScript)</p>
 <p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide</a></p>
