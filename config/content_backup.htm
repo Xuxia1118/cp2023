@@ -1,12 +1,13 @@
 <h1>About</h1>
-<p>課前準備:</p>
+<p><span style="background-color: #ffff99;">請各學員自行準備一副有線耳機, 若使用手機觀看影片, 則可以準備手機適用的有線或無線耳機</span>.</p>
+<p>課程環境:</p>
 <p style="padding-left: 30px;">當廣域網路暢通時:</p>
-<p style="padding-left: 60px;">各學員可以透過 Ubuntu 伺服器帳號 (由各分組組長負責維護), 以 SSH 登入 Ubuntu 帳號後, 自行設定網站並設法與 Replit、Github 及 Onedrive 雲端主機上的資料進行整合.</p>
+<p style="padding-left: 60px;">以 Ubuntu 帳號執行網站編輯器, 程式編寫與心得說明後轉為靜態網頁後, 程式原始碼存至 Gist, 在靜態網站中執行, 靜態網站則以 Github Pages 方式運作.</p>
+<p style="padding-left: 60px;">也可以利用 Replit 帳號從 Github 將網站倉儲 import 後, 在 Replit 中執行網站編輯器, 將程式存至 Gist, 在靜態網站中執行, 靜態網站則以 Github Pages 方式運作.</p>
 <p style="padding-left: 30px;">在無廣域網路連線時:</p>
 <p style="padding-left: 60px;">自行利用區域網路所提供的可攜程式套件, 以及 cmsimde 建立近端網站進行課程項目練習.</p>
-<p>請各學員自行準備一副有線耳機, 若使用手機觀看影片, 則可以準備手機適用的有線或無線耳機.</p>
 <p>利用既有帳號 (Google、Github、Facebook or Apple) 登入 Replit:</p>
-<p style="padding-left: 30px;">在 Replit 平台上學習 Python: <a href="https://replit.com/learn/100-days-of-python">https://replit.com/learn/100-days-of-python</a></p>
+<p style="padding-left: 30px;">在 Replit 平台上學習 Python: <a href="https://replit.com/learn/100-days-of-python">https://replit.com/learn/100-days-of-python</a> (<a href="https://replit.com/pricing">不同帳號對應使用資源</a>)</p>
 <p style="padding-left: 30px;">Youtube: <a href="https://www.youtube.com/watch?v=ASZVEe2WkI4">https://www.youtube.com/watch?v=ASZVEe2WkI4</a></p>
 <hr/>
 <p>本課程為機械設計工程系大一的計算機程式課程, 課程目標在教導學員如何利用網站整理與機械設計相關的資訊, 並能直接在網站與伺服器中編寫簡單的 HTML、Javascript、Brython 與 Python 程式, 目的是能在隨後的網際內容管理、電腦輔助設計與實習以及協同產品設計實習等課程中加以應用.</p>
@@ -177,19 +178,26 @@ import {
 <p style="padding-left: 30px;"><span style="background-color: #ccffcc;">如何說明密碼學演算法?</span></p>
 <p>密碼學演算法是用於處理數據的數學算法，旨在保護數據的安全性、完整性和機密性。它們使用各種數學和計算方法，以加密（加上密碼）和解密（解開密碼）的方式處理數據，使得只有擁有正確密鑰的人能夠解讀和存取數據。以下是對密碼學演算法的解釋：<br/><br/>1. 加密：密碼學演算法使用一個密鑰（通常是一個秘密的數字、字串或文件）來對數據進行加密。加密是將原始數據轉換成看似隨機的、不可讀的格式的過程。只有使用正確的密鑰進行解密操作，才能將加密後的數據還原為原始形式。<br/>2. 解密：解密是使用相應的密鑰對加密數據進行反向操作，以還原出原始的、可讀的數據。只有擁有正確的密鑰的人才能夠成功解密並取得原始數據。<br/>3. 對稱加密：在對稱加密中，同一個密鑰用於加密和解密數據。發送者和接收者必須共享同一個密鑰，並且將其保密。常見的對稱加密演算法有 AES（Advanced Encryption Standard）和 DES（Data Encryption Standard）。<br/>4. 非對稱加密：在非對稱加密中，使用一對密鑰，包括公鑰和私鑰。公鑰用於加密數據，而相應的私鑰用於解密數據。公鑰可以公開分享，而私鑰必須保持秘密。常見的非對稱加密演算法有 RSA 和 ECC（Elliptic Curve Cryptography）。<br/>5. 雜湊函數：雜湊函數將任意大小的數據轉換成固定長度的數字串，稱為雜湊值或摘要。這個過程是單向的，無法將雜湊值還原為原始數據。雜湊函數常用於校驗數據的完整性和識別數據的唯一性，並在密碼學中用於確保</p>
 <h2>Replit</h2>
+<p>查帳號設定與權限: <a href="https://replit.com/account">https://replit.com/account</a></p>
 <p>在 Replit 平台上學習 Python: <a href="https://replit.com/learn/100-days-of-python">https://replit.com/learn/100-days-of-python</a></p>
 <hr/>
-<p>登入 Replit 後, 設法建立一個倉儲與遠端 Github 上的空倉儲同步.</p>
-<p>為確保使用 "main" 作為主分支名稱，可以在 "git init" 之後加上 "git branch -m main" 指令。這將會將預設的分支名稱從 "master" 改為 "main"。操作流程如下：<br/><br/>1. 在 Replit 的終端機（Terminal）中，確定您目前所在的目錄是您想要作為 Git 倉儲的目錄。如果不是，您可以使用 "cd" 指令切換到正確的目錄。<br/><br/>2. 初始化 Git 倉儲：<br/>   - 執行指令 "git init"：這會在目前的目錄下初始化一個新的 Git 倉儲。<br/><br/>3. 將預設分支名稱改為 "main"：<br/>   - 執行指令 "git branch -m main"：這將把預設分支從 "master" 改為 "main"。<br/><br/>4. 連結到 GitHub 倉儲：<br/>   - 在 GitHub 上創建一個空的倉儲（Repository），並取得該倉儲的 URL。<br/>   - 在終端機中，執行指令 "git remote add origin &lt;GitHub倉儲URL&gt;"：這會將您的本地倉儲與 GitHub 倉儲連結起來。<br/><br/>5. 設定提交身分：<br/>   - 在 Replit 的右側窗格中，點擊「Secrets」選項卡。<br/>   - 在「Environment variables」區域，設定一個名為 "GIT_COMMITTER_NAME" 的變數，並設定您的名字。<br/>   - 設定一個名為 "GIT_COMMITTER_EMAIL" 的變數，並設定您的郵件地址。<br/><br/>6. 將本地的更改提交到 GitHub：<br/>   - 執行指令 "git add ."：將所有更改添加到暫存區。<br/>   - 執行指令 "git commit -m "Initial commit""：將更改提交到本地儲存庫。<br/>   - 執行指令 "git push -u origin main"：將本地的更改推送到 GitHub 倉儲。<br/><br/>現在，您的本地 Git 倉儲和 GitHub 上的倉儲已經連結起來，並且已設定提交身分，同時使用 "main" 作為主分支名稱。您可以在 Replit 上進行更改、提交和推送，並保持與 GitHub 上的倉儲同步。</p><h2>英文單字</h2>
+<p>本課程共有兩種方式利用 Replit 與 Github 建立並維護網站內容, 主要的網站內容 (靜態) 都以 Github Pages 為主, 而在 Replit 所啟動的動態網站則充作網站內容編輯之用:</p>
+<p>第一種方法, 在 Replit 中建立 git 倉儲與網站所需內容, 再透過 git remote add 與 git push -u 與 Github 中的空倉儲整合, 其中的 cmsimde 可以直接作為倉儲目錄或者作為倉儲的子模組:</p>
+<p style="padding-left: 30px;">登入 Replit 後, 設法建立一個倉儲與遠端 Github 上的空倉儲同步.</p>
+<p style="padding-left: 30px;">為確保使用 "main" 作為主分支名稱，可以在 "git init" 之後加上 "git branch -m main" 指令。這將會將預設的分支名稱從 "master" 改為 "main"。操作流程如下：<br/><br/>1. 在 Replit 的終端機（Terminal）中，確定您目前所在的目錄是您想要作為 Git 倉儲的目錄。如果不是，您可以使用 "cd" 指令切換到正確的目錄。<br/><br/>2. 初始化 Git 倉儲：<br/>   - 執行指令 "git init"：這會在目前的目錄下初始化一個新的 Git 倉儲。<br/><br/>3. 將預設分支名稱改為 "main"：<br/>   - 執行指令 "git branch -m main"：這將把預設分支從 "master" 改為 "main"。<br/><br/>4. 連結到 GitHub 倉儲：<br/>   - 在 GitHub 上創建一個空的倉儲（Repository），並取得該倉儲的 URL。<br/>   - 在終端機中，執行指令 "git remote add origin &lt;GitHub倉儲URL&gt;"：這會將您的本地倉儲與 GitHub 倉儲連結起來。<br/><br/>5. 設定提交身分：<br/>   - 在 Replit 的右側窗格中，點擊「Secrets」選項卡。<br/>   - 在「Environment variables」區域，設定一個名為 "GIT_COMMITTER_NAME" 的變數，並設定您的名字。<br/>   - 設定一個名為 "GIT_COMMITTER_EMAIL" 的變數，並設定您的郵件地址。<br/><br/>6. 將本地的更改提交到 GitHub：<br/>   - 執行指令 "git add ."：將所有更改添加到暫存區。<br/>   - 執行指令 "git commit -m "Initial commit""：將更改提交到本地儲存庫。<br/>   - 執行指令 "git push -u origin main"：將本地的更改推送到 GitHub 倉儲。<br/><br/>現在，您的本地 Git 倉儲和 GitHub 上的倉儲已經連結起來，並且已設定提交身分，同時使用 "main" 作為主分支名稱。您可以在 Replit 上進行更改、提交和推送，並保持與 GitHub 上的倉儲同步。</p>
+<p>第二種方法則是在 Github 先建立好網站倉儲, 可以將 cmsimde 作為倉儲目錄或者作為子模組, 並利用 Github Pages 伺服倉儲中的靜態網站 (也就是 content 目錄中的超文件), 之後再將倉儲 import 進入 Replit 執行倉儲中的動態網站進行內容的編輯與改版.</p>
+<p>注意: 利用 Replit 維護 Github 倉儲時, git add 與 git commit 必須透過 Tools 中的 Git 頁面完成, 然後 git push 則可以在 Git 頁面或 Shell 頁面執行 git push.</p><h2>英文單字</h2>
 <p>2016 年出版的 <a href="https://link.springer.com/book/10.1007/978-981-10-3277-6">Programming with Python</a><span> </span>書中收集 2244 個英文<a href="/downloads/words_2016_programming_with_python.txt">單字出現次數</a>, 以及各單字的<a href="/downloads/words_2016_programming_with_python.html">查詢頁面</a>.</p>
-<p>從英文教科書中統計各單字出現字數的程式:</p>
+<p>延伸專題:</p>
+<p style="padding-left: 30px;">根據上列網頁英文單字查詢結果, 是否能利用 Python 將查詢結果取出, 並與各英文單字結合, 成為之後的線上研習網頁?</p>
+<p>從英文教科書中統計各單字出現字數的程式 (檔案存在 Github 帳號對應的 Gist 倉儲):</p>
 <p>先利用<span> <a href="https://gist.githubusercontent.com/mdecycu/59f3b5fc64761e588448816ca66efbaf/raw/831465f6567763241b5e35bd74f91d2bda170f7f/extract_text_from_pdf_file.py">extract_text_from_pdf_file.py</a> </span>將 pdf 檔案中的 text 取出.</p>
 <p>然後再利用<span> <a href="https://gist.githubusercontent.com/mdecycu/59f3b5fc64761e588448816ca66efbaf/raw/831465f6567763241b5e35bd74f91d2bda170f7f/check_vocabulary_from_cdict_net.py">check_vocabulary_from_cdict_net.pdf</a> </span>查詢各英文單字的中文與英文解釋.</p>
 <p>假如導入<span> </span><a href="https://gist.githubusercontent.com/mdecourse/0abe3607fddc69b36be50db7c7962368/raw/6dc6696adf36eb0352fdadffae8680a764ec1ab6/pybean.py">pybean.py</a><span> </span>與<span> </span><a href="https://www.sqlite.org/">SQLite</a><span> </span>資料庫, 則可以利用<span> </span><a href="https://gist.githubusercontent.com/mdecycu/59f3b5fc64761e588448816ca66efbaf/raw/9689aba25d5d89e1c5ab81713100db1c8fd454e3/check_dictionary_save_into_sqlite.py">check_dictionary_save_into_sqlite.py</a><span> </span>將 10821 個常見的英文單字的中英文說明與例句存入資料庫 (<a href="/downloads/cp2021_textbook_vocabulary_10821.sqlite">cp2021_textbook_vocabulary_10821.sqlite</a>).</p>
 <hr/>
 <p>2015 年出版的 <a href="https://link.springer.com/book/10.1007/978-1-4842-1085-7">Beginning Windows 10</a> 書中收集的 3264 個<a href="/downloads/words_2015_beginning_windows_10.txt">英文單字出現次數</a>與各單字的<a href="/downloads/words_2015_beginning_windows_10.html">查詢頁面</a>.</p>
 <p>2022 年出版的 <a href="https://link.springer.com/book/10.1007/978-1-4842-8035-5">Windows 11 Made Easy</a> 書中收集的 1432 <span>個</span><a href="/downloads/words_2022_windows_11_made_easy.txt">英文單字出現次數</a><span>與各單字的</span><a href="/downloads/words_2022_windows_11_made_easy.html">查詢頁面</a><span>.</span></p><h1>Computer</h1>
-<p>Physical and Virtual PC (<a href="https://www.virtualbox.org/">Virtualbox</a>)</p>
+<p>Physical and Virtual PC (VmWare, Hyper-V, <a href="https://www.virtualbox.org/">Virtualbox</a>, Parallels)</p>
 <p>Operating Systems:</p>
 <p style="padding-left: 30px;">Windows</p>
 <p style="padding-left: 30px;">Ubuntu</p>
@@ -201,8 +209,7 @@ import {
 <p>Git distributed version control system:</p>
 <p style="padding-left: 30px;"><a href="/downloads/git_essential_document.7z">git_essential_document.7z</a> (password protected for cp2023)</p>
 <p style="padding-left: 30px;">Git is a distributed version control system (VCS) designed for software development, providing a reliable and efficient means for managing source code and enabling collaborative development workflows. Developed by Linus Torvalds in 2005, it has since emerged as a widely adopted VCS, with a rich set of features and powerful tools for managing complex codebases.<br/><br/>Git allows developers to track changes to their codebase over time, by creating and maintaining a history of all modifications made to files and directories. It provides a decentralized architecture, where each developer has their own local copy of the repository, which can be synced with remote repositories, such as those hosted on GitHub or GitLab.<br/><br/>Git's robust set of features includes branching and merging, which enable developers to create isolated copies of the codebase, work on new features or bug fixes, and then merge those changes back into the main codebase when ready. This allows developers to experiment with new ideas and features, without disrupting the overall stability of the codebase.<br/><br/>Additionally, Git provides tools for resolving conflicts that may arise when multiple developers are working on the same codebase. It supports a wide range of workflows, including peer code review, continuous integration, and deployment, which enhance collaboration and productivity.<br/><br/>In conclusion, Git represents a key technology in modern software development, offering a flexible, scalable, and reliable means for managing codebases and enabling collaborative workflows. Its widespread adoption across the industry attests to its robustness and effectiveness in handling complex software development tasks.</p>
-<p></p>
-<h2>Environment</h2>
+<p></p><h2>Environment</h2>
 <p>所處網路環境:</p>
 <p style="padding-left: 30px;">Windows: ipconfig /all</p>
 <p style="padding-left: 30px;">Ubuntu: ifconfig (need to install net-tools first: sudo pip install net-tools)</p>
