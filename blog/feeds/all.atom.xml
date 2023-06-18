@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>2023 Fall 計算機程式</title><link href="./" rel="alternate"></link><link href="./feeds/all.atom.xml" rel="self"></link><id>./</id><updated>2023-06-18T11:00:00+08:00</updated><entry><title>2023 Fall CP 課程</title><link href="./2023-Fall-Intro-to-computer-programming.html" rel="alternate"></link><published>2023-06-18T11:00:00+08:00</published><updated>2023-06-18T04:21:09+08:00</updated><author><name>yen</name></author><id>tag:None,2023-06-18:./2023-Fall-Intro-to-computer-programming.html</id><summary type="html">&lt;p&gt;2023 Fall 計算機程式的教學主要介紹 Python 在機械設計流程中的應用.&lt;/p&gt;
+</summary><content type="html">&lt;p&gt;2023 Fall 計算機程式的教學主要介紹 Python 在機械設計流程中的應用.&lt;/p&gt;
+
+
+&lt;h2&gt;Python&lt;/h2&gt;
+&lt;p&gt;為了要能在網頁上執行 Brython, 必須先了解基本的 Javascript 程式語法, 在網路中設定 Brython 執行環境後, 再利用前端的 Brython 或 Javascript 與後端的 Python 結合進行網際機械設計與模擬.&lt;/p&gt;</content><category term="Misc"></category><category term="2023FallCP"></category></entry></feed>

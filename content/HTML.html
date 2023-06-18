@@ -125,7 +125,7 @@ img.add_border {
     <ul class='site-menu js-clone-nav mr-auto d-none d-lg-block'>
                         <li class="active has-children"><a href="index.html">Home</a>
                         <ul class="dropdown">
-                            <li><a href="sitemap.html">Site Map</a></li>
+                            <li><a href="sitemap.html">SMap</a></li>
                             <li><a href="./../reveal/index.html">reveal</a></li>
                             <li><a href="./../blog/index.html">blog</a></li>
                         </ul>
@@ -141,13 +141,24 @@ img.add_border {
           </div>
           
         </header>
-    <div id="tipue_search_content">About << <a href='About.html'>Previous</a> <a href='SolidJS.html'>Next</a> >> SolidJS<br /><h1>HTML</h1>
-<p><a href="https://developer.mozilla.org/zh-TW/docs/Glossary/HTML">https://developer.mozilla.org/zh-TW/docs/Glossary/HTML</a></p>
-<p>Canvas: <a href="https://developer.mozilla.org/zh-TW/docs/Web/API/Canvas_API/Tutorial">https://developer.mozilla.org/zh-TW/docs/Web/API/Canvas_API/Tutorial</a></p>
+    <div id="tipue_search_content">About << <a href='About.html'>Previous</a> <a href='SolidJS.html'>Next</a> >> SolidJS<br /><h1>HTML</h1><p>
+<a href="https://developer.mozilla.org/zh-TW/docs/Glossary/HTML">
+  https://developer.mozilla.org/zh-TW/docs/Glossary/HTML
+ </a>
+</p>
+<p>
+ Canvas:
+ <a href="https://developer.mozilla.org/zh-TW/docs/Web/API/Canvas_API/Tutorial">
+  https://developer.mozilla.org/zh-TW/docs/Web/API/Canvas_API/Tutorial
+ </a>
+</p>
 <!-- add the canvas tag first -->
-<p><canvas height="200" id="my_canvas" width="400"></canvas></p>
+<p>
+<canvas height="200" id="my_canvas" width="400">
+</canvas>
+</p>
 <script>
-// Get the canvas element
+ // Get the canvas element
         var canvas = document.getElementById("my_canvas");
         var ctx = canvas.getContext("2d");
 
@@ -161,7 +172,9 @@ img.add_border {
         ctx.lineTo(350, 150); // Ending point coordinates (x, y)
         ctx.stroke();
 </script>
-<p>上列圖形的程式碼:</p>
+<p>
+ 上列圖形的程式碼:
+</p>
 <pre class="brush:html;auto-links:false;toolbar:false" contenteditable="false">&lt;!-- add the canvas tag first --&gt;
 &lt;p&gt;&lt;canvas id="my_canvas" width="400" height="200"&gt;&lt;/canvas&gt;&lt;/p&gt;
 &lt;script&gt;// &lt;![CDATA[
@@ -179,15 +192,26 @@ img.add_border {
         ctx.lineTo(350, 150); // Ending point coordinates (x, y)
         ctx.stroke();
 // ]]&gt;&lt;/script&gt;</pre>
-<p>HTML canvas and Javascript 練習:</p>
+<p>
+ HTML canvas and Javascript 練習:
+</p>
 <ol>
-<li>請根據上列 html 與 Javascript 繪線程式的語法, 找出繪圖座標原點.</li>
-<li>請利用與上列繪圖相同粗細的藍色線條, 從繪圖座標原點出發, 畫一個長度為 200 Pixel 的正方圖形.</li>
-<li>請將上列正方形改為圓形.</li>
-<li>請將圓形中央部分塗上黃色.</li>
-<li>請利用黑色畫筆在圓形中央, 以 14 Pixel 大小的字元, 寫出"半徑 100 Pixel 的圓形"字串.</li>
-</ol>
-<br />About << <a href='About.html'>Previous</a> <a href='SolidJS.html'>Next</a> >> SolidJS</div>
+<li>
+  請根據上列 html 與 Javascript 繪線程式的語法, 找出繪圖座標原點.
+ </li>
+<li>
+  請利用與上列繪圖相同粗細的藍色線條, 從繪圖座標原點出發, 畫一個長度為 200 Pixel 的正方圖形.
+ </li>
+<li>
+  請將上列正方形改為圓形.
+ </li>
+<li>
+  請將圓形中央部分塗上黃色.
+ </li>
+<li>
+  請利用黑色畫筆在圓形中央, 以 14 Pixel 大小的字元, 寫出"半徑 100 Pixel 的圓形"字串.
+ </li>
+</ol><br />About << <a href='About.html'>Previous</a> <a href='SolidJS.html'>Next</a> >> SolidJS</div>
         
     <!-- footer -->
       <div class="container">

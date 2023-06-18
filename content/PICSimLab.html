@@ -125,7 +125,7 @@ img.add_border {
     <ul class='site-menu js-clone-nav mr-auto d-none d-lg-block'>
                         <li class="active has-children"><a href="index.html">Home</a>
                         <ul class="dropdown">
-                            <li><a href="sitemap.html">Site Map</a></li>
+                            <li><a href="sitemap.html">SMap</a></li>
                             <li><a href="./../reveal/index.html">reveal</a></li>
                             <li><a href="./../blog/index.html">blog</a></li>
                         </ul>
@@ -141,26 +141,82 @@ img.add_border {
           </div>
           
         </header>
-    <div id="tipue_search_content">ANSI C << <a href='ANSI C.html'>Previous</a> <br /><h1>PICSimLab</h1>
-<p><a href="https://www.youtube.com/watch?v=be96Ds8umig">https://www.youtube.com/watch?v=be96Ds8umig</a></p>
-<h4>Arduino</h4>
-<p><a href="https://github.com/lcgamboa/picsimlab">https://github.com/lcgamboa/picsimlab</a> Programmable IC Simulator Laboratory</p>
-<p><a href="https://www.arduino.cc/en/software">https://www.arduino.cc/en/software</a> Arduino IDE</p>
-<p><a href="https://com0com.sourceforge.net/">https://com0com.sourceforge.net/</a> Null-modem Emulator</p>
-<p>PICSimLab 模擬 Arduino Uno (COM6) 與 Stepper Motor:</p>
-<p><img alt="" height="270" src="./../images/picsimlab_arduino_uno.gif" width="400"/></p>
-<p><img caption="false" height="400" src="./../images/picsimlab_stepper_motor.gif" width="249"/></p>
-<p>透過 PICSimLab Pin Viewer, 將 PB0/8, PB1/~9, PB2/~10 與 PB3/~11 與 Stepper Motor 接線.</p>
-<p><img alt="" height="232" src="./../images/picsimlab_pin_viewer.gif" width="400"/></p>
-<p>透過 com0com 模擬 COM6 &lt;-&gt; COM4 連線.</p>
-<p><img alt="" height="327" src="./../images/com0com_setup.png" width="400"/></p>
-<p>Arduino IDE 將 Stepper Motor 控制程式編譯後透過 COM4 經由 com0com 將程式經由 COM6 上傳到 Virtual Arduino Uno board.</p>
-<p><img alt="" height="302" src="./../images/arduino_ide.png" width="400"/></p>
-<p>接著希望可以利用 CoppeliaSim zmqRemoteAPI Python 讀取 PICSimLab 控制 Stepper Motor 的資料, 用來同步控制位於 CoppeliaSim 場景中的 Virtual Stepper Motor.</p>
-<p>Reference:</p>
-<p style="padding-left: 30px;"><a href="https://link.springer.com/chapter/10.1007/978-3-030-82544-7_24">HoRoSim, a Holistic Robot Simulator: Arduino Code, Electronic Circuits and Physics</a> (<a href="https://link.springer.com/content/pdf/10.1007/978-3-030-82544-7_24.pdf">pdf</a>)</p>
-<p style="padding-left: 30px;"><a href="https://github.com/scrum-1/horosim">scrum-1/horosim (github.com)</a></p>
-<p></p><br />ANSI C << <a href='ANSI C.html'>Previous</a> </div>
+    <div id="tipue_search_content">ANSI C << <a href='ANSI C.html'>Previous</a> <br /><h1>PICSimLab</h1><p>
+<a href="https://www.youtube.com/watch?v=be96Ds8umig">
+  https://www.youtube.com/watch?v=be96Ds8umig
+ </a>
+</p>
+<h4>
+ Arduino
+</h4>
+<p>
+<a href="https://github.com/lcgamboa/picsimlab">
+  https://github.com/lcgamboa/picsimlab
+ </a>
+ Programmable IC Simulator Laboratory
+</p>
+<p>
+<a href="https://www.arduino.cc/en/software">
+  https://www.arduino.cc/en/software
+ </a>
+ Arduino IDE
+</p>
+<p>
+<a href="https://com0com.sourceforge.net/">
+  https://com0com.sourceforge.net/
+ </a>
+ Null-modem Emulator
+</p>
+<p>
+ PICSimLab 模擬 Arduino Uno (COM6) 與 Stepper Motor:
+</p>
+<p>
+<img alt="" height="270" src="./../images/picsimlab_arduino_uno.gif" width="400"/>
+</p>
+<p>
+<img caption="false" height="400" src="./../images/picsimlab_stepper_motor.gif" width="249"/>
+</p>
+<p>
+ 透過 PICSimLab Pin Viewer, 將 PB0/8, PB1/~9, PB2/~10 與 PB3/~11 與 Stepper Motor 接線.
+</p>
+<p>
+<img alt="" height="232" src="./../images/picsimlab_pin_viewer.gif" width="400"/>
+</p>
+<p>
+ 透過 com0com 模擬 COM6 &lt;-&gt; COM4 連線.
+</p>
+<p>
+<img alt="" height="327" src="./../images/com0com_setup.png" width="400"/>
+</p>
+<p>
+ Arduino IDE 將 Stepper Motor 控制程式編譯後透過 COM4 經由 com0com 將程式經由 COM6 上傳到 Virtual Arduino Uno board.
+</p>
+<p>
+<img alt="" height="302" src="./../images/arduino_ide.png" width="400"/>
+</p>
+<p>
+ 接著希望可以利用 CoppeliaSim zmqRemoteAPI Python 讀取 PICSimLab 控制 Stepper Motor 的資料, 用來同步控制位於 CoppeliaSim 場景中的 Virtual Stepper Motor.
+</p>
+<p>
+ Reference:
+</p>
+<p style="padding-left: 30px;">
+<a href="https://link.springer.com/chapter/10.1007/978-3-030-82544-7_24">
+  HoRoSim, a Holistic Robot Simulator: Arduino Code, Electronic Circuits and Physics
+ </a>
+ (
+ <a href="https://link.springer.com/content/pdf/10.1007/978-3-030-82544-7_24.pdf">
+  pdf
+ </a>
+ )
+</p>
+<p style="padding-left: 30px;">
+<a href="https://github.com/scrum-1/horosim">
+  scrum-1/horosim (github.com)
+ </a>
+</p>
+<p>
+</p><br />ANSI C << <a href='ANSI C.html'>Previous</a> </div>
         
     <!-- footer -->
       <div class="container">
