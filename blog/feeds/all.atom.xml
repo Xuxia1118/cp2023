@@ -281,9 +281,20 @@ doc["threejsblock"].bind("click", threejsblock.do)
 &lt;div id="brython_div2"&gt;&lt;/div&gt;
 &lt;!-- editor2 結束 --&gt;
 &lt;hr/&gt;&lt;p&gt;
-&lt;script src="https://unpkg.com/three@0.144.0/build/three.js" type="text/javascript"&gt;&lt;/script&gt;</content><category term="Misc"></category><category term="2023FallCAD"></category></entry><entry><title>2023 Fall CP 課程</title><link href="./2023-Fall-Intro-to-computer-programming.html" rel="alternate"></link><published>2023-06-18T11:00:00+08:00</published><updated>2023-06-18T04:21:09+08:00</updated><author><name>yen</name></author><id>tag:None,2023-06-18:./2023-Fall-Intro-to-computer-programming.html</id><summary type="html">&lt;p&gt;2023 Fall 計算機程式的教學主要介紹 Python 在機械設計流程中的應用.&lt;/p&gt;
+&lt;script src="https://unpkg.com/three@0.144.0/build/three.js" type="text/javascript"&gt;&lt;/script&gt;</content><category term="Misc"></category><category term="2023FallCAD"></category></entry><entry><title>2023 Fall CP 課程</title><link href="./2023-Fall-Intro-to-computer-programming.html" rel="alternate"></link><published>2023-06-18T11:00:00+08:00</published><updated>2023-06-18T07:18:52+08:00</updated><author><name>yen</name></author><id>tag:None,2023-06-18:./2023-Fall-Intro-to-computer-programming.html</id><summary type="html">&lt;p&gt;2023 Fall 計算機程式的教學主要介紹 Python 在機械設計流程中的應用.&lt;/p&gt;
 </summary><content type="html">&lt;p&gt;2023 Fall 計算機程式的教學主要介紹 Python 在機械設計流程中的應用.&lt;/p&gt;
 
 
 &lt;h2&gt;Python&lt;/h2&gt;
-&lt;p&gt;為了要能在網頁上執行 Brython, 必須先了解基本的 Javascript 程式語法, 在網路中設定 Brython 執行環境後, 再利用前端的 Brython 或 Javascript 與後端的 Python 結合進行網際機械設計與模擬.&lt;/p&gt;</content><category term="Misc"></category><category term="2023FallCP"></category></entry></feed>
+&lt;p&gt;為了要能在網頁上執行 Brython, 必須先了解基本的 Javascript 程式語法, 在網路中設定 Brython 執行環境後, 再利用前端的 Brython 或 Javascript 與後端的 Python 結合進行網際機械設計與模擬.&lt;/p&gt;
+&lt;h2&gt;Javascript&lt;/h2&gt;
+&lt;p&gt;瀏覽器就是你的計算機程式環境&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://jsforcats.com/"&gt;http://jsforcats.com/&lt;/a&gt; (貓咪學 JavaScript)&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide"&gt;https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://eloquentjavascript.net/"&gt;https://eloquentjavascript.net/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;利用 Javascript 寫的 CAD: &lt;a href="https://openjscad.xyz/"&gt;https://openjscad.xyz/&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;Brython&lt;/h2&gt;
+&lt;p&gt;&lt;a href="https://brython.info/"&gt;https://brython.info/&lt;/a&gt; 在瀏覽器中編寫輕量的 Python 語法程式.&lt;/p&gt;
+&lt;p&gt;最近出現的 &lt;a href="https://pyscript.net/"&gt;https://pyscript.net/&lt;/a&gt; 不僅與 Brython 相同, 能在瀏覽器使用 Python 編寫程式, 還能使用各種 Python 既有的程式庫.&lt;/p&gt;
+&lt;h2&gt;C&lt;/h2&gt;
+&lt;p&gt;C 程式是為了開發 Unix 操作系統而發明, 程式語言的特性非常接近計算機硬體, 執行速度快, 在許多機電設計產品中經常被用來控制硬體. &lt;/p&gt;</content><category term="Misc"></category><category term="2023FallCP"></category></entry></feed>
