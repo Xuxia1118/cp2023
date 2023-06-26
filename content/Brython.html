@@ -142,6 +142,72 @@ img.add_border {
           
         </header>
     <div id="tipue_search_content">Javascript << <a href='Javascript.html'>Previous</a> <a href='Python.html'>Next</a> >> Python<br /><h1>Brython</h1><p>
+ Browser Python - Python on Browser
+</p>
+<p>
+ 在網頁中建立 Brython 程式環境:
+</p>
+<pre class="brush:html;auto-links:false;toolbar:false" contenteditable="false">&lt;!-- 導入 brython 程式庫 --&gt;
+&lt;p&gt;
+&lt;script src="./../cmsimde/static/brython.js"&gt;&lt;/script&gt;
+&lt;script src="./../cmsimde/static/brython_stdlib.js"&gt;&lt;/script&gt;
+&lt;/p&gt;
+&lt;!-- 啟動 Brython --&gt;
+&lt;p&gt;
+&lt;script&gt;
+window.onload=function(){
+brython({debug:1, pythonpath:['./../cmsimde/static/','./../downloads/py/']});
+}
+&lt;/script&gt;
+&lt;script type="text/python"&gt;
+# write your Brython codes here
+&lt;/script&gt;</pre>
+<p>
+ Brython
+ <a href="https://docs.python.org/3/tutorial/modules.html">
+  modules
+ </a>
+ or
+ <a href="https://docs.python.org/3/tutorial/modules.html#packages">
+  packages
+ </a>
+ can put into downloads/py directory
+</p>
+<p>
+ A Python module is like a file containing special Python instructions that can be used by other Python files or programs. On the other hand, a script is a Python file that is meant to be directly run or executed.
+</p>
+<p>
+ Python Modules 範例:
+</p>
+<p>
+ 例如: 將 point.py 放入 downloads/py 目錄中:
+</p>
+<pre class="brush:py;auto-links:false;toolbar:false" contenteditable="false">#point.py
+def point():
+    return "可以傳回 point"</pre>
+<p>
+ 一旦導入上列引用 Brython 的頁面, 其中已經宣告 pythonpath 位於 static 與 downloads/py 目錄中, 因此 Brython 在頁面啟動時將導入當時位於這兩個目錄中的 .py 模組, 之後就可以透過 import 導入 point.py 作為模組:
+</p>
+<pre class="brush:py;auto-links:false;toolbar:false" contenteditable="false">import point
+print(point.point())
+
+# 執行後的結果將會印出 downloads/py/point.py 中的 point() 函式執行內容, 也就是"可以傳回 point".</pre>
+<p>
+ Python Packages 範例:
+</p>
+<p>
+ 例如: 將 point2.py 放入 downloads/py/line/ 目錄中, 且在 line 目錄中加入一個空的 __init__.py 檔案.
+</p>
+<p>
+ 且 point2.py 的內容與先前 point.py 的內容相同. 一旦上列導入 Brython 且宣告 pythonpath 位於 downloads/py 之後, 之後頁面中的 Brython 程式就可以採 import 的方式導入 line package, 並且使用 package 中的 point2.py modules.
+</p>
+<pre class="brush:py;auto-links:false;toolbar:false" contenteditable="false"># 引用 line package 的範例
+from line import point2
+print(point2.point())
+
+# 執行結果會印出"可以傳回 point"</pre>
+<hr/>
+<p>
  Question1:
 </p>
 <p style="padding-left: 30px;">

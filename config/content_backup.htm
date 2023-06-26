@@ -257,6 +257,10 @@
  <a href="https://mde.tw/cp2023">
   https://mde.tw/cp2023
  </a>
+ or
+ <a href="https://cad2.cycu.org/~yen/cp2023">
+  https://cad2.cycu.org/~yen/cp2023
+ </a>
 </p>
 <p>
  行事曆
@@ -1261,6 +1265,55 @@ import {
 <h1>
  Brython
 </h1>
+<p>
+ Browser Python - Python on Browser
+</p>
+<p>
+ 在網頁中建立 Brython 程式環境:
+</p>
+<pre class="brush:html;auto-links:false;toolbar:false" contenteditable="false">&lt;!-- 導入 brython 程式庫 --&gt;
+&lt;p&gt;
+&lt;script src="/static/brython.js"&gt;&lt;/script&gt;
+&lt;script src="/static/brython_stdlib.js"&gt;&lt;/script&gt;
+&lt;/p&gt;
+&lt;!-- 啟動 Brython --&gt;
+&lt;p&gt;
+&lt;script&gt;
+window.onload=function(){
+brython({debug:1, pythonpath:['/static/','./../downloads/py/']});
+}
+&lt;/script&gt;
+&lt;script type="text/python"&gt;
+# write your Brython codes here
+&lt;/script&gt;</pre>
+<p>
+ Brython
+ <a href="https://docs.python.org/3/tutorial/modules.html">
+  modules
+ </a>
+ or
+ <a href="https://docs.python.org/3/tutorial/modules.html#packages">
+  packages
+ </a>
+ can put into downloads/py directory
+</p>
+<p>
+ A Python module is like a file containing special Python instructions that can be used by other Python files or programs. On the other hand, a script is a Python file that is meant to be directly run or executed.
+</p>
+<p>
+ 例如: 將 point.py 放入 downloads/py 目錄中:
+</p>
+<pre class="brush:py;auto-links:false;toolbar:false" contenteditable="false">#point.py
+def point():
+    return "可以傳回 point"</pre>
+<p>
+ 一旦導入上列引用 Brython 的頁面, 其中已經宣告 pythonpath 位於 static 與 downloads/py 目錄中, 因此 Brython 在頁面啟動時將導入當時位於這兩個目錄中的 .py 模組, 之後就可以透過 import 導入 point.py 作為模組:
+</p>
+<pre class="brush:py;auto-links:false;toolbar:false" contenteditable="false">import point
+print(point.point())
+
+# 執行後的結果將會印出 downloads/py/point.py 中的 point() 函式執行內容, 也就是"可以傳回 point".</pre>
+<hr/>
 <p>
  Question1:
 </p>
