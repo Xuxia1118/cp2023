@@ -1235,12 +1235,8 @@ import {
 <p>
 </p>
 <h1>Brython_env</h1>
-<p>
- Browser Python - Python on Browser
-</p>
-<p>
- 在網頁中建立 Brython 程式環境:
-</p>
+<p>Browser Python - Python in your Browser</p>
+<p>在網頁中建立 Brython 程式環境:</p>
 <pre class="brush:html;auto-links:false;toolbar:false" contenteditable="false">&lt;!-- 導入 brython 程式庫 --&gt;
 &lt;p&gt;
 &lt;script src="/static/brython.js"&gt;&lt;/script&gt;
@@ -1256,127 +1252,44 @@ brython({debug:1, pythonpath:['/static/','./../downloads/py/']});
 &lt;script type="text/python"&gt;
 # write your Brython codes here
 &lt;/script&gt;</pre>
-<p>
- Brython
- <a href="https://docs.python.org/3/tutorial/modules.html">
-  modules
- </a>
- or
- <a href="https://docs.python.org/3/tutorial/modules.html#packages">
-  packages
- </a>
- can put into downloads/py directory
-</p>
-<p>
- A Python module is like a file containing special Python instructions that can be used by other Python files or programs. On the other hand, a script is a Python file that is meant to be directly run or executed.
-</p>
-<p>
- Python Modules 範例:
-</p>
-<p>
- 例如: 將 point.py 放入 downloads/py 目錄中:
-</p>
+<p>Brython <a href="https://docs.python.org/3/tutorial/modules.html"> modules </a> or <a href="https://docs.python.org/3/tutorial/modules.html#packages"> packages </a> can put into downloads/py directory</p>
+<p>A Python module is like a file containing special Python instructions that can be used by other Python files or programs. On the other hand, a script is a Python file that is meant to be directly run or executed.</p>
+<p>Python Modules 範例:</p>
+<p>例如: 將 point.py 放入 downloads/py 目錄中:</p>
 <pre class="brush:py;auto-links:false;toolbar:false" contenteditable="false">#point.py
 def point():
     return "可以傳回 point"</pre>
-<p>
- 一旦導入上列引用 Brython 的頁面, 其中已經宣告 pythonpath 位於 static 與 downloads/py 目錄中, 因此 Brython 在頁面啟動時將導入當時位於這兩個目錄中的 .py 模組, 之後就可以透過 import 導入 point.py 作為模組:
-</p>
+<p>一旦導入上列引用 Brython 的頁面, 其中已經宣告 pythonpath 位於 static 與 downloads/py 目錄中, 因此 Brython 在頁面啟動時將導入當時位於這兩個目錄中的 .py 模組, 之後就可以透過 import 導入 point.py 作為模組:</p>
 <pre class="brush:py;auto-links:false;toolbar:false" contenteditable="false">import point
 print(point.point())
 
 # 執行後的結果將會印出 downloads/py/point.py 中的 point() 函式執行內容, 也就是"可以傳回 point".</pre>
-<p>
- Python Packages 範例:
-</p>
-<p>
- 例如: 將 point2.py 放入 downloads/py/line/ 目錄中, 且在 line 目錄中加入一個空的 __init__.py 檔案.
-</p>
-<p>
- 且 point2.py 的內容與先前 point.py 的內容相同. 一旦上列導入 Brython 且宣告 pythonpath 位於 downloads/py 之後, 之後頁面中的 Brython 程式就可以採 import 的方式導入 line package, 並且使用 package 中的 point2.py modules.
-</p>
+<p>Python Packages 範例:</p>
+<p>例如: 將 point2.py 放入 downloads/py/line/ 目錄中, 且在 line 目錄中加入一個空的 __init__.py 檔案.</p>
+<p>且 point2.py 的內容與先前 point.py 的內容相同. 一旦上列導入 Brython 且宣告 pythonpath 位於 downloads/py 之後, 之後頁面中的 Brython 程式就可以採 import 的方式導入 line package, 並且使用 package 中的 point2.py modules.</p>
 <pre class="brush:py;auto-links:false;toolbar:false" contenteditable="false"># 引用 line package 的範例
 from line import point2
 print(point2.point())
 
 # 執行結果會印出"可以傳回 point"</pre>
 <hr/>
-<p>
- Question1:
-</p>
-<p style="padding-left: 30px;">
- 利用 Brython 協助 markdown_form 編寫 Pelican blog 原始檔案.
-</p>
-<p>
- Question2:
-</p>
-<p style="padding-left: 30px;">
- 利用 Brython 能否用來建立一個線上 Reveal.js 網際簡報系統編輯器?
-</p>
-<p>
- Question3:
-</p>
-<p style="padding-left: 30px;">
- 透過
- <a href="https://betterprogramming.pub/three-js-with-python-syntax-pyweb3d-2152bed1a43d">
-  PyWeb3d
- </a>
- (
- <a href="https://github.com/Bruno-Odinukweze/PyWeb3D">
-  on Github
- </a>
- ), 能不能利用 Brython 建立一個 3D 的貪食蛇或俄羅斯方塊?
-</p>
-<p>
- Alternatives:
-</p>
-<p style="padding-left: 30px;">
-<a href="https://pyscript.net/">
-  https://pyscript.net/
- </a>
-</p>
-<p>
- Brython 是一個讓您可以使用 Python 程式語言在瀏覽器中執行的工具。以下是一個簡單的說明，可用於向初學者解釋 Brython：
- <br/>
-<br/>
- Brython 是 "Browser Python" 的縮寫，它是一個專為瀏覽器設計的 Python 執行環境。Python 是一個簡潔易讀且強大的程式語言，而 Brython 讓您能夠直接在瀏覽器中運行 Python 程式碼，而不需要任何額外的安裝或設定。
- <br/>
-<br/>
- 使用 Brython，您可以在網頁上編寫 Python 程式碼，並在瀏覽器中執行。這對於學習 Python 或在網頁上進行簡單的動態互動非常有用。您可以編寫各種功能，例如計算器、遊戲、表單驗證等等，並在瀏覽器中立即查看結果。
- <br/>
-<br/>
- Brython 的優勢之一是它提供了與標準 Python 類似的語法和功能。這意味著您可以使用您已經熟悉的 Python 語法來編寫瀏覽器腳本，而不需要學習其他語言或概念。它支援大部分的 Python 3 語法和標準庫，這讓您可以使用許多內建函式、資料結構和模組。
- <br/>
-<br/>
- 使用 Brython，您可以將 Python 程式碼直接放在網頁的 "&lt;script type='text/python'&gt;" 標籤中，或者使用外部腳本檔案引入。Brython 會解析並執行您的 Python 程式碼，並將結果顯示在網頁上。
- <br/>
-<br/>
- 總結來說，Brython 是一個讓您在瀏覽器中運行 Python 程式碼的工具。它使得在網頁上使用 Python 變得容易，並提供了與標準 Python 相似的語法和功能。如果您想要在網頁上進行簡單的動態互動或學習 Python，Brython 是一個很好的選擇。
-</p>
-<p>
-<a href="https://stackabuse.com/an-introductory-guide-to-brython/">
-  https://stackabuse.com/an-introductory-guide-to-brython/
- </a>
-</p>
-<p>
-<a href="https://www.geeksforgeeks.org/introduction-to-brython/">
-  https://www.geeksforgeeks.org/introduction-to-brython/
- </a>
-</p>
-<p>
-<a href="https://realpython.com/brython-python-in-browser/">
-  https://realpython.com/brython-python-in-browser/
- </a>
-</p>
+<p>Question1:</p>
+<p style="padding-left: 30px;">利用 Brython 協助 markdown_form 編寫 Pelican blog 原始檔案.</p>
+<p>Question2:</p>
+<p style="padding-left: 30px;">利用 Brython 能否用來建立一個線上 Reveal.js 網際簡報系統編輯器?</p>
+<p>Question3:</p>
+<p style="padding-left: 30px;">透過 <a href="https://betterprogramming.pub/three-js-with-python-syntax-pyweb3d-2152bed1a43d"> PyWeb3d </a> ( <a href="https://github.com/Bruno-Odinukweze/PyWeb3D"> on Github </a> ), 能不能利用 Brython 建立一個 3D 的貪食蛇或俄羅斯方塊?</p>
+<p>Alternatives:</p>
+<p style="padding-left: 30px;"><a href="https://pyscript.net/"> https://pyscript.net/ </a></p>
+<p>Brython 是一個讓您可以使用 Python 程式語言在瀏覽器中執行的工具。以下是一個簡單的說明，可用於向初學者解釋 Brython： <br/> <br/> Brython 是 "Browser Python" 的縮寫，它是一個專為瀏覽器設計的 Python 執行環境。Python 是一個簡潔易讀且強大的程式語言，而 Brython 讓您能夠直接在瀏覽器中運行 Python 程式碼，而不需要任何額外的安裝或設定。 <br/> <br/> 使用 Brython，您可以在網頁上編寫 Python 程式碼，並在瀏覽器中執行。這對於學習 Python 或在網頁上進行簡單的動態互動非常有用。您可以編寫各種功能，例如計算器、遊戲、表單驗證等等，並在瀏覽器中立即查看結果。 <br/> <br/> Brython 的優勢之一是它提供了與標準 Python 類似的語法和功能。這意味著您可以使用您已經熟悉的 Python 語法來編寫瀏覽器腳本，而不需要學習其他語言或概念。它支援大部分的 Python 3 語法和標準庫，這讓您可以使用許多內建函式、資料結構和模組。 <br/> <br/> 使用 Brython，您可以將 Python 程式碼直接放在網頁的 "&lt;script type='text/python'&gt;" 標籤中，或者使用外部腳本檔案引入。Brython 會解析並執行您的 Python 程式碼，並將結果顯示在網頁上。 <br/> <br/> 總結來說，Brython 是一個讓您在瀏覽器中運行 Python 程式碼的工具。它使得在網頁上使用 Python 變得容易，並提供了與標準 Python 相似的語法和功能。如果您想要在網頁上進行簡單的動態互動或學習 Python，Brython 是一個很好的選擇。</p>
+<p><a href="https://stackabuse.com/an-introductory-guide-to-brython/"> https://stackabuse.com/an-introductory-guide-to-brython/ </a></p>
+<p><a href="https://www.geeksforgeeks.org/introduction-to-brython/"> https://www.geeksforgeeks.org/introduction-to-brython/ </a></p>
+<p><a href="https://realpython.com/brython-python-in-browser/"> https://realpython.com/brython-python-in-browser/ </a></p>
+<p><a href="https://bioshell.pl/azoledocking/">https://bioshell.pl/azoledocking/</a> </p>
+<p><a href="https://github.com/andy31lewis/brywidgets">https://github.com/andy31lewis/brywidgets</a> </p>
+<p><a href="https://brython.info/gallery/bricks_py.html">https://brython.info/gallery/bricks_py.html</a> </p>
 <hr/>
-<p>
- cmsite: wcms use
- <a href="https://github.com/mdecycu/cmsimde">
-  https://github.com/mdecycu/cmsimde
- </a>
- as submodule
-</p>
-<h2>Brython</h2>
+<p>cmsite: wcms use <a href="https://github.com/mdecycu/cmsimde"> https://github.com/mdecycu/cmsimde </a> as submodule</p><h2>Brython</h2>
 <p><a href="https://en.wikipedia.org/wiki/Python_(programming_language)">https://en.wikipedia.org/wiki/Python_(programming_language)</a></p>
 <h4>Examples:</h4>
 <p style="padding-left: 30px;"><a href="https://gist.github.com/mdecycu/d9082d678096bd58378d6afe2c7fa05d">https://gist.github.com/mdecycu/d9082d678096bd58378d6afe2c7fa05d</a></p>
@@ -1406,8 +1319,8 @@ print(point2.point())
 <h4><a href="https://docs.python.org/3/tutorial/controlflow.html#break-and-continue-statements-and-else-clauses-on-loops">break</a></h4>
 <h4><a href="https://docs.python.org/3/tutorial/controlflow.html#pass-statements">pass</a></h4>
 <h4><a href="https://docs.python.org/3/tutorial/classes.html?highlight=classes">classes</a></h4>
-<p>這個頁面 demo 如何在同一頁面下納入多個線上 Ace 編輯器與執行按鈕 (<a href="/downloads/practice_html.txt">practice_html.txt</a> 動態頁面超文件).</p>
-<p><a href="/downloads/practice_html.txt">practice_html.txt</a> 動態頁面超文件應該可以在啟動 Brython 時, 設定將 .py 檔案放入 downloads/py 目錄中引用.</p>
+<p>這個頁面 demo 如何在同一頁面下納入多個線上 Ace 編輯器與執行按鈕 (<a href="https://gist.githubusercontent.com/mdecycu/107d8ba0ee55d2f46e613f610d9b1166/raw/e9a321c53099f4dc6f9010a5e8176570c20b8828/practice_html.txt">practice_html.txt</a> 動態頁面超文件).</p>
+<p><a href="https://gist.githubusercontent.com/mdecycu/107d8ba0ee55d2f46e613f610d9b1166/raw/e9a321c53099f4dc6f9010a5e8176570c20b8828/practice_html.txt">practice_html.txt</a> 動態頁面超文件應該可以在啟動 Brython 時, 設定將 .py 檔案放入 downloads/py 目錄中引用.</p>
 <p>亦即將所有對應的 html 也使用 Brython 產生, 然後寫為 <a href="https://docs.python.org/3/tutorial/classes.html">class</a> 後, 在範例導入時透過 <a href="https://docs.python.org/3/tutorial/classes.html#instance-objects">instance</a> 引用.</p>
 <pre class="brush:html;auto-links:false;toolbar:false" contenteditable="false">&lt;!-- 啟動 Brython --&gt;
 &lt;script&gt;
