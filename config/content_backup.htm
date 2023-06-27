@@ -272,23 +272,43 @@
 <iframe height="600" src="https://calendar.google.com/calendar/embed?src=mde.nfu.edu.tw_3439313938333136353439%40resource.calendar.google.com&amp;ctz=Asia%2FTaipei&amp;mode=week&amp;src=mde.nfu.edu.tw_35303530373431313438%40resource.calendar.google.com&amp;ctz=Asia%2FTaipei&amp;src=yen%40gm.nfu.edu.tw&amp;ctz=Asia%2FTaipei" width="800">
 </iframe>
 </p>
-<h2>HTML</h2>
-<p>
-<a href="https://developer.mozilla.org/zh-TW/docs/Glossary/HTML">
-  https://developer.mozilla.org/zh-TW/docs/Glossary/HTML
- </a>
-</p>
-<p>
- Canvas:
- <a href="https://developer.mozilla.org/zh-TW/docs/Web/API/Canvas_API/Tutorial">
-  https://developer.mozilla.org/zh-TW/docs/Web/API/Canvas_API/Tutorial
- </a>
-</p>
+<h2>Yourself</h2>
+<h4><span style="background-color: #ffff99;">登入學校郵箱:</span></h4>
+<p style="padding-left: 30px;">學校 Webmail: <a href="https://mail.nfu.edu.tw">https://mail.nfu.edu.tw</a> (帳號為: 學號@nfu.edu.tw, 用來通知 stud.cycu.org 主機上的帳號密碼與學期成績)</p>
+<h4><span style="background-color: #ffff99;">申請或登入 Gmail:</span></h4>
+<p style="padding-left: 30px;">假如尚未擁有 Gmail 帳號, 請自行<a href="https://accounts.google.com/SignUp">申請一個 Gmail 帳號</a>, 可用來<a href="https://replit.com/login">登入 Replit</a> 線上 IDE 系統.</p>
+<h4><span style="background-color: #ffff99;">申請 Github 帳號:</span></h4>
+<p style="padding-left: 30px;">請利用"學號@nfu.edu.tw"在 Github <a href="https://github.com/join">註冊</a>一個帳號, 帳號名稱可以選擇學號, 或者用英文姓名的三個字母縮寫加上學號作為 Github 帳號. 帳號建立後必須進入 <a href="https://mail.nfu.edu.tw">https://mail.nfu.edu.tw</a> 回覆確認信件後, 才能開始使用 Github.</p>
+<p>Github 帳號在計算機程式課程中的用途:</p>
+<ol>
+<li>領取 <a href="https://classroom.github.com">Github Classroom</a> 系統所指定的作業</li>
+<li>建立個人網站: <a href="https://github_帳號.github.io">https://github_帳號.github.io</a></li>
+<li>將計算機程式課程中所編寫的程式與相關資料存入 Github 帳號下的 Gist</li>
+</ol>
+<p>在 Github 中, 將所建立的倉儲轉為網站, 可以在建立倉儲時, 以 <a href="https://github.com/mdecycu/cmsite">https://github.com/mdecycu/cmsite</a> 作為 template, 首先學習如何利用 Replit 維護網站內容, 隨後則可利用 stud 伺服器中的帳號進行 Github 倉儲與網站內容的維護, 最後也可以在近端可攜程式環境中維護 Gthub 倉儲與網站內容.</p>
+<p>利用 Github 建立個人網站 (透過 <a href="https://pages.github.com/">Github Pages</a>) 有以下目標:</p>
+<ol>
+<li>可在網站中自我介紹 (<a href="https://www.betterup.com/blog/how-to-introduce-yourself">https://www.betterup.com/blog/how-to-introduce-yourself</a>)</li>
+<li>可在網站中展示並介紹自己寫過的程式</li>
+<li>可在網站中簡介自己修過的課程內容</li>
+<li>可在網站中說明自己曾經參與過的專題</li>
+<li>可在網站中介紹自己未來的生涯規劃</li>
+</ol>
+<h4><span style="background-color: #ffff99;">申請 onedrive 帳號:</span></h4>
+<ol>
+<li>登入學校郵箱 (用來收帳號建立確認信)</li>
+<li>至 <a href="https://www.microsoft.com/zh-tw/education/products/office">https://www.microsoft.com/zh-tw/education/products/office</a>, 以 @nfu 帳號申請 OneDrive 帳號.</li>
+</ol>
+<p>onedrive 帳號在計算機程式課程中的用途:</p>
+<ol>
+<li>擁有線上 5TB 的儲存空間, 可用來儲存個人所建立的流程操作 mp4 影片, 並嵌入個人網頁或作業網站中</li>
+<li>登入後可參與計算機程式課程 Teams</li>
+<li>登入後可下載計算機程式課程網站中的相關檔案</li>
+</ol><h2>HTML</h2>
+<p><a href="https://developer.mozilla.org/zh-TW/docs/Glossary/HTML"> https://developer.mozilla.org/zh-TW/docs/Glossary/HTML </a></p>
+<p>Canvas: <a href="https://developer.mozilla.org/zh-TW/docs/Web/API/Canvas_API/Tutorial"> https://developer.mozilla.org/zh-TW/docs/Web/API/Canvas_API/Tutorial </a></p>
 <!-- add the canvas tag first -->
-<p>
-<canvas height="200" id="my_canvas" width="400">
-</canvas>
-</p>
+<p><canvas height="200" id="my_canvas" width="400"> </canvas></p>
 <script>
  // Get the canvas element
         var canvas = document.getElementById("my_canvas");
@@ -304,9 +324,7 @@
         ctx.lineTo(350, 150); // Ending point coordinates (x, y)
         ctx.stroke();
 </script>
-<p>
- 上列圖形的程式碼:
-</p>
+<p>上列圖形的程式碼:</p>
 <pre class="brush:html;auto-links:false;toolbar:false" contenteditable="false">&lt;!-- add the canvas tag first --&gt;
 &lt;p&gt;&lt;canvas id="my_canvas" width="400" height="200"&gt;&lt;/canvas&gt;&lt;/p&gt;
 &lt;script&gt;// &lt;![CDATA[
@@ -324,27 +342,14 @@
         ctx.lineTo(350, 150); // Ending point coordinates (x, y)
         ctx.stroke();
 // ]]&gt;&lt;/script&gt;</pre>
-<p>
- HTML canvas and Javascript 練習:
-</p>
+<p>HTML canvas and Javascript 練習:</p>
 <ol>
-<li>
-  請根據上列 html 與 Javascript 繪線程式的語法, 找出繪圖座標原點.
- </li>
-<li>
-  請利用與上列繪圖相同粗細的藍色線條, 從繪圖座標原點出發, 畫一個長度為 200 Pixel 的正方圖形.
- </li>
-<li>
-  請將上列正方形改為圓形.
- </li>
-<li>
-  請將圓形中央部分塗上黃色.
- </li>
-<li>
-  請利用黑色畫筆在圓形中央, 以 14 Pixel 大小的字元, 寫出"半徑 100 Pixel 的圓形"字串.
- </li>
-</ol>
-<h3>SolidJS</h3>
+<li>請根據上列 html 與 Javascript 繪線程式的語法, 找出繪圖座標原點.</li>
+<li>請利用與上列繪圖相同粗細的藍色線條, 從繪圖座標原點出發, 畫一個長度為 200 Pixel 的正方圖形.</li>
+<li>請將上列正方形改為圓形.</li>
+<li>請將圓形中央部分塗上黃色.</li>
+<li>請利用黑色畫筆在圓形中央, 以 14 Pixel 大小的字元, 寫出"半徑 100 Pixel 的圓形"字串.</li>
+</ol><h3>SolidJS</h3>
 <p>
 <a href="https://www.solidjs.com/">
   https://www.solidjs.com/
@@ -1287,6 +1292,7 @@ print(point2.point())
 <p><a href="https://realpython.com/brython-python-in-browser/"> https://realpython.com/brython-python-in-browser/ </a></p>
 <p><a href="https://bioshell.pl/azoledocking/">https://bioshell.pl/azoledocking/</a> </p>
 <p><a href="https://github.com/andy31lewis/brywidgets">https://github.com/andy31lewis/brywidgets</a> </p>
+<p><a href="https://brython.info/gallery/bricks_py.html">https://brython.info/gallery/bricks_py.html</a> </p>
 <hr/>
 <p>cmsite: wcms use <a href="https://github.com/mdecycu/cmsimde"> https://github.com/mdecycu/cmsimde </a> as submodule</p><h2>Brython</h2>
 <p><a href="https://en.wikipedia.org/wiki/Python_(programming_language)">https://en.wikipedia.org/wiki/Python_(programming_language)</a></p>
