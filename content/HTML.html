@@ -130,7 +130,7 @@ img.add_border {
                             <li><a href="./../blog/index.html">blog</a></li>
                         </ul>
                       </li>
-                     <li class='has-children'><a href='About.html'>About</a><ul class='dropdown'><li><a href='w1_task.html'>w1_task</a><li class='has-children'><a href='HTML.html'>HTML</a><ul class='dropdown'><li><a href='SolidJS.html'>SolidJS</a></li></ul><li class='has-children'><a href='github.html'>github</a><ul class='dropdown'><li><a href='Github Pages.html'>Github Pages</a><li><a href='Incidence.html'>Incidence</a></li></ul><li class='has-children'><a href='git commands.html'>git commands</a><ul class='dropdown'><li><a href='git add.html'>git add</a></li></ul><li><a href='Replit.html'>Replit</a><li><a href='英文單字.html'>英文單字</a></li></ul><li class='has-children'><a href='Computer.html'>Computer</a><ul class='dropdown'><li><a href='Environment.html'>Environment</a><li><a href='Ubuntu.html'>Ubuntu</a><li><a href='Mobile.html'>Mobile</a></li></ul><li><a href='Javascript.html'>Javascript</a><li class='has-children'><a href='Brython_env.html'>Brython_env</a><ul class='dropdown'><li><a href='Brython.html'>Brython</a></li></ul><li class='has-children'><a href='Python.html'>Python</a><ul class='dropdown'><li><a href='Portable Python.html'>Portable Python</a><li><a href='Mojo.html'>Mojo</a></li></ul><li class='has-children'><a href='ANSI C.html'>ANSI C</a><ul class='dropdown'><li><a href='PICSimLab.html'>PICSimLab</a></li>
+                     <li class='has-children'><a href='About.html'>About</a><ul class='dropdown'><li><a href='w1_task.html'>w1_task</a><li class='has-children'><a href='HTML.html'>HTML</a><ul class='dropdown'><li><a href='SolidJS.html'>SolidJS</a></li></ul><li class='has-children'><a href='github.html'>github</a><ul class='dropdown'><li><a href='Github Pages.html'>Github Pages</a><li><a href='Incidence.html'>Incidence</a></li></ul><li class='has-children'><a href='git commands.html'>git commands</a><ul class='dropdown'><li><a href='git add.html'>git add</a></li></ul><li><a href='Replit.html'>Replit</a><li class='has-children'><a href='英文單字.html'>英文單字</a><ul class='dropdown'><li><a href='英文文法.html'>英文文法</a></li></li></ul></ul><li class='has-children'><a href='Computer.html'>Computer</a><ul class='dropdown'><li><a href='Environment.html'>Environment</a><li><a href='Ubuntu.html'>Ubuntu</a><li><a href='Mobile.html'>Mobile</a></li></ul><li><a href='Javascript.html'>Javascript</a><li class='has-children'><a href='Brython_env.html'>Brython_env</a><ul class='dropdown'><li><a href='Brython.html'>Brython</a></li></ul><li class='has-children'><a href='Python.html'>Python</a><ul class='dropdown'><li><a href='Portable Python.html'>Portable Python</a><li><a href='Database.html'>Database</a><li><a href='Mojo.html'>Mojo</a></li></ul><li class='has-children'><a href='ANSI C.html'>ANSI C</a><ul class='dropdown'><li><a href='PICSimLab.html'>PICSimLab</a></li>
                       </ul>
                 </nav>
               </div>
@@ -144,37 +144,65 @@ img.add_border {
     <div id="tipue_search_content">w1_task << <a href='w1_task.html'>Previous</a> <a href='SolidJS.html'>Next</a> >> SolidJS<br /><h1>HTML</h1>
 <p><a href="https://developer.mozilla.org/zh-TW/docs/Glossary/HTML"> https://developer.mozilla.org/zh-TW/docs/Glossary/HTML </a></p>
 <p>Canvas: <a href="https://developer.mozilla.org/zh-TW/docs/Web/API/Canvas_API/Tutorial"> https://developer.mozilla.org/zh-TW/docs/Web/API/Canvas_API/Tutorial </a></p>
+<!-- 在  html 文件中加入註解的方法 -->
+<p></p>
 <!-- add the canvas tag first -->
-<p><canvas height="200" id="my_canvas" width="400"> </canvas></p>
+<p></p>
+<!-- 將 canvas 標註的 id 設為 my_canvas, 以下讓 Javascript 在此畫布上進行繪圖 -->
+<p><canvas height="200" id="my_canvas" width="400"></canvas></p>
 <script>
- // Get the canvas element
-        var canvas = document.getElementById("my_canvas");
-        var ctx = canvas.getContext("2d");
+// Javascript 與 C 相同, 兩個斜線後可以加入單行註解
+/* 而多行註解的用法, 則是利用斜線加上 star sign 作為開頭
+然後使用 star sign 與斜線作為結尾.
+*/
+// Get the canvas element
+    // 將超文件中 id 為 my_canvas 的標註設定為 canvas 變數
+    var canvas = document.getElementById("my_canvas");
+    /* 利用 canvas 的 getContext() 方法指定 2D 繪圖,
+        且將此 2D 繪圖物件對應至變數 ctx
+    */
+    var ctx = canvas.getContext("2d");
 
-        // Set line properties
-        ctx.strokeStyle = "red";
-        ctx.lineWidth = 5;
+    // Set line properties
+    // 將 2D 繪圖物件的 strokeStyle 屬性設為紅色
+    ctx.strokeStyle = "red";
+    // 將 2D 繪圖物件的 lineWidth 屬性設為 5
+    ctx.lineWidth = 5;
  
-        // Draw the line
-        ctx.beginPath();
+    // Draw the line
+    // 利用 2D 繪圖物件執行繪圖
+    ctx.beginPath();
         ctx.moveTo(50, 50); // Starting point coordinates (x, y)
         ctx.lineTo(350, 150); // Ending point coordinates (x, y)
         ctx.stroke();
 </script>
 <p>上列圖形的程式碼:</p>
-<pre class="brush:html;auto-links:false;toolbar:false" contenteditable="false">&lt;!-- add the canvas tag first --&gt;
+<pre class="brush:html;auto-links:false;toolbar:false" contenteditable="false">&lt;!-- 在  html 文件中加入註解的方法 --&gt;
+&lt;!-- add the canvas tag first --&gt;
+&lt;!-- 將 canvas 標註的 id 設為 my_canvas, 以下讓 Javascript 在此畫布上進行繪圖 --&gt;
 &lt;p&gt;&lt;canvas id="my_canvas" width="400" height="200"&gt;&lt;/canvas&gt;&lt;/p&gt;
 &lt;script&gt;// &lt;![CDATA[
+// Javascript 與 C 相同, 兩個斜線後可以加入單行註解
+/* 而多行註解的用法, 則是利用斜線加上 star sign 作為開頭
+然後使用 star sign 與斜線作為結尾.
+*/
 // Get the canvas element
-        var canvas = document.getElementById("my_canvas");
-        var ctx = canvas.getContext("2d");
+    // 將超文件中 id 為 my_canvas 的標註設定為 canvas 變數
+    var canvas = document.getElementById("my_canvas");
+    /* 利用 canvas 的 getContext() 方法指定 2D 繪圖,
+        且將此 2D 繪圖物件對應至變數 ctx
+    */
+    var ctx = canvas.getContext("2d");
 
-        // Set line properties
-        ctx.strokeStyle = "red";
-        ctx.lineWidth = 5;
+    // Set line properties
+    // 將 2D 繪圖物件的 strokeStyle 屬性設為紅色
+    ctx.strokeStyle = "red";
+    // 將 2D 繪圖物件的 lineWidth 屬性設為 5
+    ctx.lineWidth = 5;
  
-        // Draw the line
-        ctx.beginPath();
+    // Draw the line
+    // 利用 2D 繪圖物件執行繪圖
+    ctx.beginPath();
         ctx.moveTo(50, 50); // Starting point coordinates (x, y)
         ctx.lineTo(350, 150); // Ending point coordinates (x, y)
         ctx.stroke();
