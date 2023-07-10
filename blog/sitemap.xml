@@ -5,77 +5,77 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>./</loc>
-<lastmod>2023-06-18T07:41:05-00:00</lastmod>
+<lastmod>2023-07-10T16:36:14-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>./archives.html</loc>
-<lastmod>2023-06-18T07:41:05-00:00</lastmod>
+<lastmod>2023-07-10T16:36:14-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>./tags.html</loc>
-<lastmod>2023-06-18T07:41:05-00:00</lastmod>
+<lastmod>2023-07-10T16:36:14-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>./categories.html</loc>
-<lastmod>2023-06-18T07:41:05-00:00</lastmod>
+<lastmod>2023-07-10T16:36:14-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>./pages/about/</loc>
-<lastmod>2023-06-18T04:18:05+08:00</lastmod>
+<lastmod>2023-06-24T11:02:32+08:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>./2023-Fall-Bython-execution-environment.html</loc>
-<lastmod>2023-06-18T05:15:38+08:00</lastmod>
+<lastmod>2023-07-10T16:35:53+08:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>./2023-Fall-Intro-to-computer-programming.html</loc>
-<lastmod>2023-06-18T07:41:03+08:00</lastmod>
+<lastmod>2023-06-24T11:02:32+08:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>./category/misc.html</loc>
-<lastmod>2023-06-18T12:00:00+08:06</lastmod>
+<lastmod>2023-07-10T16:35:53+08:06</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>./tag/2023fallcad.html</loc>
-<lastmod>2023-06-18T12:00:00+08:06</lastmod>
+<lastmod>2023-07-10T16:35:53+08:06</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>./tag/2023fallcp.html</loc>
-<lastmod>2023-06-18T11:00:00+08:06</lastmod>
+<lastmod>2023-06-24T11:02:32+08:06</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>./author/yen.html</loc>
-<lastmod>2023-06-18T12:00:00+08:06</lastmod>
+<lastmod>2023-07-10T16:35:53+08:06</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
