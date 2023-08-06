@@ -502,7 +502,17 @@ import {
 <p style="padding-left: 30px;">登入 Replit 後, 設法建立一個倉儲與遠端 Github 上的空倉儲同步.</p>
 <p style="padding-left: 30px;">為確保使用 "main" 作為主分支名稱，可以在 "git init" 之後加上 "git branch -m main" 指令。這將會將預設的分支名稱從 "master" 改為 "main"。操作流程如下： <br/> <br/> 1. 在 Replit 的終端機（Terminal）中，確定您目前所在的目錄是您想要作為 Git 倉儲的目錄。如果不是，您可以使用 "cd" 指令切換到正確的目錄。 <br/> <br/> 2. 初始化 Git 倉儲： <br/> - 執行指令 "git init"：這會在目前的目錄下初始化一個新的 Git 倉儲。 <br/> <br/> 3. 將預設分支名稱改為 "main"： <br/> - 執行指令 "git branch -m main"：這將把預設分支從 "master" 改為 "main"。 <br/> <br/> 4. 連結到 GitHub 倉儲： <br/> - 在 GitHub 上創建一個空的倉儲（Repository），並取得該倉儲的 URL。 <br/> - 在終端機中，執行指令 "git remote add origin &lt;GitHub倉儲URL&gt;"：這會將您的本地倉儲與 GitHub 倉儲連結起來。 <br/> <br/> 5. 設定提交身分： <br/> - 在 Replit 的右側窗格中，點擊「Secrets」選項卡。 <br/> - 在「Environment variables」區域，設定一個名為 "GIT_USER_NAME" 的變數，並設定您的名字。 <br/> - 設定一個名為 "GIT_USER_EMAIL" 的變數，並設定您的郵件地址。 <br/> <br/> 6. 將本地的更改提交到 GitHub： <br/> - 執行指令 "git add ."：將所有更改添加到暫存區。 <br/> - 執行指令 "git commit -m "Initial commit""：將更改提交到本地儲存庫。 <br/> - 執行指令 "git push -u origin main"：將本地的更改推送到 GitHub 倉儲。 <br/> <br/> 現在，您的本地 Git 倉儲和 GitHub 上的倉儲已經連結起來，並且已設定提交身分，同時使用 "main" 作為主分支名稱。您可以在 Replit 上進行更改、提交和推送，並保持與 GitHub 上的倉儲同步。</p>
 <p>第二種方法則是在 Github 先建立好網站倉儲, 可以將 cmsimde 作為倉儲目錄或者作為子模組, 並利用 Github Pages 伺服倉儲中的靜態網站 (也就是 content 目錄中的超文件), 之後再將倉儲 import 進入 Replit 執行倉儲中的動態網站進行內容的編輯與改版.</p>
-<p>注意: 利用 Replit 維護 Github 倉儲時, git add 與 git commit 必須透過 Tools 中的 Git 頁面完成, 然後 git push 則可以在 Git 頁面或 Shell 頁面執行 git push.</p><h2>英文單字</h2>
+<p>注意: 利用 Replit 維護 Github 倉儲時, git add 與 git commit 必須透過 Tools 中的 Git 頁面完成, 然後 git push 則可以在 Git 頁面或 Shell 頁面執行 git push.</p>
+<h3>網際編輯</h3>
+<p>使用 Replit 建立網際編輯環境</p>
+<p>以帳號登入 Replit (例如: wcms 或 Github/Gmail 帳號）</p>
+<p>利用 import from Github 將 cmsimde 倉儲導入, 且使用 Python template</p>
+<p>若倉儲將 cmsimde 作為子模組, 則導入後需要以 git submodule update --init --recursive 導入所有子模組</p>
+<p>在 Shell 區以 pip3 install flask flask_cors bs4 lxml pelican markdown pyopenssl gevent 安裝啟動 cmsimde 編輯環境所需的 Python3 模組</p>
+<p>開啟 repl 中的隱藏檔案後, 在 .replit 中的 [env] 區域加入 GIT_USER_NAME 與 GIT_USER_EMAIL 設定</p>
+<p>Run main.py 後, 以瀏覽器開啟 cmsimde 編輯環境後, 進入 Config 修改管理者密碼後, 測試是否可以修改網站內容</p>
+<p></p>
+<p></p><h2>英文單字</h2>
 <p>2016 年出版的 <a href="https://link.springer.com/book/10.1007/978-981-10-3277-6"> Programming with Python </a> <span> </span> 書中收集 2244 個英文 <a href="/downloads/words_2016_programming_with_python.txt"> 單字出現次數 </a> , 以及各單字的 <a href="/downloads/words_2016_programming_with_python.html"> 查詢頁面 </a> .</p>
 <p>延伸專題:</p>
 <p style="padding-left: 30px;">根據上列網頁英文單字查詢結果, 是否能利用 Python 將查詢結果取出, 並與各英文單字結合, 成為之後的線上研習網頁?</p>
@@ -536,6 +546,10 @@ import {
 <p style="padding-left: 30px;">Work experienes</p>
 <p style="padding-left: 30px;">Awards</p>
 <p style="padding-left: 30px;">Others</p>
+<p>Programming</p>
+<p style="padding-left: 30px;"><a href="https://www.brookings.edu/wp-content/uploads/2021/10/How-S-Korea-implemented-its-CS-program_FINAL.pdf">https://www.brookings.edu/wp-content/uploads/2021/10/How-S-Korea-implemented-its-CS-program_FINAL.pdf</a> </p>
+<p style="padding-left: 30px;"><a href="https://www.brookings.edu/wp-content/uploads/2021/10/How-England-implemented-its-computer-science-education-program-FINAL.pdf">https://www.brookings.edu/wp-content/uploads/2021/10/How-England-implemented-its-computer-science-education-program-FINAL.pdf</a> </p>
+<p style="padding-left: 30px;"><a href="https://www.brookings.edu/wp-content/uploads/2021/10/How-BC-implemented-its-CS-education-program-FINAL.pdf">https://www.brookings.edu/wp-content/uploads/2021/10/How-BC-implemented-its-CS-education-program-FINAL.pdf</a> </p>
 <p></p><h1>Computer</h1>
 <p>我們對電腦軟硬體有多少認識? 從學習計算機程式、網際內容管理、電腦輔助設計與實習到協同產品設計實習的過程中, 該如何應用電腦? (眼前的桌上型電腦、筆記型電腦、平板、手機與各種為控制器)</p>
 <p>Physical and Virtual PC (VmWare, Hyper-V, <a href="https://www.virtualbox.org/"> Virtualbox </a> , Parallels)</p>
