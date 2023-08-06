@@ -508,6 +508,7 @@ import {
 <p>以帳號登入 Replit (例如: wcms 或 Github/Gmail 帳號）</p>
 <p>利用 import from Github 將 cmsimde 倉儲導入, 且使用 Python template</p>
 <p>若倉儲將 cmsimde 作為子模組, 則導入後需要以 git submodule update --init --recursive 導入所有子模組</p>
+<p>下載子模組之後, 先以 Run 執行 main.py 啟動, 會顯示缺少模組, 之後再安裝下列模組 (若直接安裝下列模組, 將會出現 gevent 模組啟動錯誤)</p>
 <p>在 Shell 區以 pip3 install flask flask_cors bs4 lxml pelican markdown pyopenssl gevent 安裝啟動 cmsimde 編輯環境所需的 Python3 模組</p>
 <p>開啟 repl 中的隱藏檔案後, 在 .replit 中的 [env] 區域加入 GIT_USER_NAME 與 GIT_USER_EMAIL 設定</p>
 <p>Run main.py 後, 以瀏覽器開啟 cmsimde 編輯環境後, 進入 Config 修改管理者密碼後, 測試是否可以修改網站內容</p>

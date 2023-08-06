@@ -506,7 +506,14 @@ import {
 <h3>網際編輯</h3>
 <p>使用 Replit 建立網際編輯環境</p>
 <p>以帳號登入 Replit (例如: wcms 或 Github/Gmail 帳號）</p>
-<p>利用 import from Github 將 cmsimde 倉儲導入, 且使用 Python template</p><h2>英文單字</h2>
+<p>利用 import from Github 將 cmsimde 倉儲導入, 且使用 Python template</p>
+<p>若倉儲將 cmsimde 作為子模組, 則導入後需要以 git submodule update --init --recursive 導入所有子模組</p>
+<p>下載子模組之後, 先以 Run 執行 main.py 啟動, 會顯示缺少模組, 之後再安裝下列模組</p>
+<p>在 Shell 區以 pip3 install flask flask_cors bs4 lxml pelican markdown pyopenssl gevent 安裝啟動 cmsimde 編輯環境所需的 Python3 模組</p>
+<p>開啟 repl 中的隱藏檔案後, 在 .replit 中的 [env] 區域加入 GIT_USER_NAME 與 GIT_USER_EMAIL 設定</p>
+<p>Run main.py 後, 以瀏覽器開啟 cmsimde 編輯環境後, 進入 Config 修改管理者密碼後, 測試是否可以修改網站內容</p>
+<p></p>
+<p></p><h2>英文單字</h2>
 <p>2016 年出版的 <a href="https://link.springer.com/book/10.1007/978-981-10-3277-6"> Programming with Python </a> <span> </span> 書中收集 2244 個英文 <a href="/downloads/words_2016_programming_with_python.txt"> 單字出現次數 </a> , 以及各單字的 <a href="/downloads/words_2016_programming_with_python.html"> 查詢頁面 </a> .</p>
 <p>延伸專題:</p>
 <p style="padding-left: 30px;">根據上列網頁英文單字查詢結果, 是否能利用 Python 將查詢結果取出, 並與各英文單字結合, 成為之後的線上研習網頁?</p>
