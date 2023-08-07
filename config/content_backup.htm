@@ -508,7 +508,7 @@ import {
 <p>以帳號登入 Replit (例如: wcms 或 Github/Gmail 帳號）</p>
 <p>利用 import from Github 將 cmsimde 倉儲導入, 且使用 Python template</p>
 <p>若倉儲將 cmsimde 作為子模組, 則導入後需要以 git submodule update --init --recursive 導入所有子模組</p>
-<p>下載子模組之後, 先以 Run 執行 main.py 啟動, 會顯示缺少模組, 之後再安裝下列模組</p>
+<p>下載子模組之後, 先以 Run 執行 main.py 啟動, 會顯示缺少模組, 之後再安裝下列模組 (若直接安裝下列模組, 將會出現 gevent 模組啟動錯誤)</p>
 <p>在 Shell 區以 pip3 install flask flask_cors bs4 lxml pelican markdown pyopenssl gevent 安裝啟動 cmsimde 編輯環境所需的 Python3 模組</p>
 <p>開啟 repl 中的隱藏檔案後, 在 .replit 中的 [env] 區域加入 GIT_USER_NAME 與 GIT_USER_EMAIL 設定</p>
 <p>Run main.py 後, 以瀏覽器開啟 cmsimde 編輯環境後, 進入 Config 修改管理者密碼後, 測試是否可以修改網站內容</p>
@@ -548,9 +548,11 @@ import {
 <p style="padding-left: 30px;">Awards</p>
 <p style="padding-left: 30px;">Others</p>
 <p>Programming</p>
-<p style="padding-left: 30px;"><a href="https://www.brookings.edu/wp-content/uploads/2021/10/How-S-Korea-implemented-its-CS-program_FINAL.pdf">https://www.brookings.edu/wp-content/uploads/2021/10/How-S-Korea-implemented-its-CS-program_FINAL.pdf</a> </p>
-<p style="padding-left: 30px;"><a href="https://www.brookings.edu/wp-content/uploads/2021/10/How-England-implemented-its-computer-science-education-program-FINAL.pdf">https://www.brookings.edu/wp-content/uploads/2021/10/How-England-implemented-its-computer-science-education-program-FINAL.pdf</a> </p>
-<p style="padding-left: 30px;"><a href="https://www.brookings.edu/wp-content/uploads/2021/10/How-BC-implemented-its-CS-education-program-FINAL.pdf">https://www.brookings.edu/wp-content/uploads/2021/10/How-BC-implemented-its-CS-education-program-FINAL.pdf</a> </p>
+<p style="padding-left: 30px;"><a href="https://www.brookings.edu/wp-content/uploads/2021/10/How-S-Korea-implemented-its-CS-program_FINAL.pdf">https://www.brookings.edu/wp-content/uploads/2021/10/How-S-Korea-implemented-its-CS-program_FINAL.pdf</a></p>
+<p style="padding-left: 30px;"><a href="https://www.brookings.edu/wp-content/uploads/2021/10/How-England-implemented-its-computer-science-education-program-FINAL.pdf">https://www.brookings.edu/wp-content/uploads/2021/10/How-England-implemented-its-computer-science-education-program-FINAL.pdf</a></p>
+<p style="padding-left: 30px;"><a href="https://www.brookings.edu/wp-content/uploads/2021/10/How-BC-implemented-its-CS-education-program-FINAL.pdf">https://www.brookings.edu/wp-content/uploads/2021/10/How-BC-implemented-its-CS-education-program-FINAL.pdf</a></p>
+<p style="padding-left: 30px;"><a href="https://zh.wikibooks.org/zh-tw/%E5%A4%A7%E9%99%86%E5%8F%B0%E6%B9%BE%E8%AE%A1%E7%AE%97%E6%9C%BA%E6%9C%AF%E8%AF%AD%E5%AF%B9%E7%85%A7%E8%A1%A8">台灣與中國大陸計算機術語對照表</a></p>
+<p style="padding-left: 30px;"><a href="https://sitcon.org/">學生計算機年會</a></p>
 <p></p><h1>Computer</h1>
 <p>我們對電腦軟硬體有多少認識? 從學習計算機程式、網際內容管理、電腦輔助設計與實習到協同產品設計實習的過程中, 該如何應用電腦? (眼前的桌上型電腦、筆記型電腦、平板、手機與各種為控制器)</p>
 <p>Physical and Virtual PC (VmWare, Hyper-V, <a href="https://www.virtualbox.org/"> Virtualbox </a> , Parallels)</p>
@@ -565,6 +567,7 @@ import {
 <p>Git distributed version control system:</p>
 <p style="padding-left: 30px;"><a href="/downloads/git_essential_document.7z"> git_essential_document.7z </a> (password protected for cp2023)</p>
 <p style="padding-left: 30px;">Git is a distributed version control system (VCS) designed for software development, providing a reliable and efficient means for managing source code and enabling collaborative development workflows. Developed by Linus Torvalds in 2005, it has since emerged as a widely adopted VCS, with a rich set of features and powerful tools for managing complex codebases. <br/> <br/> Git allows developers to track changes to their codebase over time, by creating and maintaining a history of all modifications made to files and directories. It provides a decentralized architecture, where each developer has their own local copy of the repository, which can be synced with remote repositories, such as those hosted on GitHub or GitLab. <br/> <br/> Git's robust set of features includes branching and merging, which enable developers to create isolated copies of the codebase, work on new features or bug fixes, and then merge those changes back into the main codebase when ready. This allows developers to experiment with new ideas and features, without disrupting the overall stability of the codebase. <br/> <br/> Additionally, Git provides tools for resolving conflicts that may arise when multiple developers are working on the same codebase. It supports a wide range of workflows, including peer code review, continuous integration, and deployment, which enhance collaboration and productivity. <br/> <br/> In conclusion, Git represents a key technology in modern software development, offering a flexible, scalable, and reliable means for managing codebases and enabling collaborative workflows. Its widespread adoption across the industry attests to its robustness and effectiveness in handling complex software development tasks.</p>
+<p><a href="https://www.nchc.org.tw/">https://www.nchc.org.tw/</a> (國家高速網路與計算中心) </p>
 <p></p><h2>Environment</h2>
 <p>
  所處網路環境:
@@ -1583,9 +1586,12 @@ doc["threejsblock"].bind("click", threejsblock.do)
 <p>在此我們將利用 RoboDK 中的 Robot 控制來練習 Python 各種語法的應用, 其中也將牽涉一些線性代數 (Linear Algebra, <a href="https://realpython.com/python-linear-algebra/">1</a>, <a href="https://pythonnumericalmethods.berkeley.edu/notebooks/chapter14.01-Basics-of-Linear-Algebra.html">2</a>) 與幾何 (Geometry, <a href="https://open.umn.edu/opentextbooks/textbooks/508">1</a>, <a href="https://open.umn.edu/opentextbooks/subjects/geometry-and-trigonometry">2</a>, <a href="https://www.lakelandschools.org/lakelandhigh/academics/geometry_online_text_book.php">3</a>) 的應用.</p>
 <p></p>
 <p></p><h2>Database</h2>
-<p><a href="https://youtu.be/zbn08UrhSBY">Building a Web Application with Python and PostgreSQL</a> (<a href="https://youtu.be/iaWG4O-0O-A">Part 2</a>)</p><h2>Rust</h2>
+<p><a href="https://youtu.be/zbn08UrhSBY">Building a Web Application with Python and PostgreSQL</a> (<a href="https://youtu.be/iaWG4O-0O-A">Part 2</a>)</p>
+<p><a href="https://docs.postgresql.tw/">https://docs.postgresql.tw/</a> </p><h2>OSM</h2>
+<p><a href="https://osm.tw/">https://osm.tw/</a> (OpenStreeMap)</p>
+<h2>Rust</h2>
 <p><a href="https://youtu.be/BpPEoZW5IiY">https://youtu.be/BpPEoZW5IiY</a> (Youtube: Learn Rust Programming)</p>
-<h2>Mojo</h2>
+<p><a href="https://rust-lang.tw/">https://rust-lang.tw/</a></p><h2>Mojo</h2>
 <p><a href="https://storage.googleapis.com/pub-tools-public-publication-data/pdf/1c082b766d8e14b54e36e37c9fc3ebbe8b4a72dd.pdf"> MLIR Primer: A Compiler Infrastructure for the End of Moore’s Law </a> ( <a href="https://arxiv.org/pdf/2002.11054.pdf"> paper </a> )</p>
 <p><a href="https://docs.modular.com/mojo/why-mojo.html"> https://docs.modular.com/mojo/why-mojo.html </a></p>
 <p><a href="https://virtualgyan.com/mojo-lang-the-new-programming-language/"> https://virtualgyan.com/mojo-lang-the-new-programming-language/ </a></p>
@@ -1596,7 +1602,11 @@ doc["threejsblock"].bind("click", threejsblock.do)
 <p style="padding-left: 30px;"></p><h1>ANSI C</h1>
 <p><a href="https://www.learn-c.org/"> https://www.learn-c.org/ </a></p>
 <p><a href="https://www.programiz.com/c-programming"> https://www.programiz.com/c-programming </a></p>
-<p><a href="http://hades.mech.northwestern.edu/images/6/68/CBook.pdf">http://hades.mech.northwestern.edu/images/6/68/CBook.pdf</a> </p>
+<p><a href="http://hades.mech.northwestern.edu/images/6/68/CBook.pdf">http://hades.mech.northwestern.edu/images/6/68/CBook.pdf</a></p>
+<p>Linux:</p>
+<p style="padding-left: 30px;"><a href="https://sysprog21.github.io/lkmpg/">https://sysprog21.github.io/lkmpg/</a> </p>
+<p style="padding-left: 30px;"><a href="https://sysprog21.github.io/cpumemory-zhtw/">https://sysprog21.github.io/cpumemory-zhtw/</a> </p>
+<p style="padding-left: 30px;"><a href="https://github.com/sysprog21/">https://github.com/sysprog21/</a> </p>
 <p>Arduino:</p>
 <p style="padding-left: 30px;"><a href="https://docs.arduino.cc/"> https://docs.arduino.cc/ </a></p>
 <p style="padding-left: 30px;"><a href="https://www.tinkercad.com/circuits"> https://www.tinkercad.com/circuits </a></p>
