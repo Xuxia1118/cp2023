@@ -500,18 +500,18 @@ import {
 <p>本課程共有兩種方式利用 Replit 與 Github 建立並維護網站內容, 主要的網站內容 (靜態) 都以 Github Pages 為主, 而在 Replit 所啟動的動態網站則充作網站內容編輯之用:</p>
 <p>第一種方法, 在 Replit 中建立 git 倉儲與網站所需內容, 再透過 git remote add 與 git push -u 與 Github 中的空倉儲整合, 其中的 cmsimde 可以直接作為倉儲目錄或者作為倉儲的子模組:</p>
 <p style="padding-left: 30px;">登入 Replit 後, 設法建立一個倉儲與遠端 Github 上的空倉儲同步.</p>
-<p style="padding-left: 30px;">為確保使用 "main" 作為主分支名稱，可以在 "git init" 之後加上 "git branch -m main" 指令。這將會將預設的分支名稱從 "master" 改為 "main"。操作流程如下： <br/> <br/> 1. 在 Replit 的終端機（Terminal）中，確定您目前所在的目錄是您想要作為 Git 倉儲的目錄。如果不是，您可以使用 "cd" 指令切換到正確的目錄。 <br/> <br/> 2. 初始化 Git 倉儲： <br/> - 執行指令 "git init"：這會在目前的目錄下初始化一個新的 Git 倉儲。 <br/> <br/> 3. 將預設分支名稱改為 "main"： <br/> - 執行指令 "git branch -m main"：這將把預設分支從 "master" 改為 "main"。 <br/> <br/> 4. 連結到 GitHub 倉儲： <br/> - 在 GitHub 上創建一個空的倉儲（Repository），並取得該倉儲的 URL。 <br/> - 在終端機中，執行指令 "git remote add origin &lt;GitHub倉儲URL&gt;"：這會將您的本地倉儲與 GitHub 倉儲連結起來。 <br/> <br/> 5. 設定提交身分： <br/> - 在 Replit 的右側窗格中，點擊「Secrets」選項卡。 <br/> - 在「Environment variables」區域，設定一個名為 "GIT_USER_NAME" 的變數，並設定您的名字。 <br/> - 設定一個名為 "GIT_USER_EMAIL" 的變數，並設定您的郵件地址。 <br/> <br/> 6. 將本地的更改提交到 GitHub： <br/> - 執行指令 "git add ."：將所有更改添加到暫存區。 <br/> - 執行指令 "git commit -m "Initial commit""：將更改提交到本地儲存庫。 <br/> - 執行指令 "git push -u origin main"：將本地的更改推送到 GitHub 倉儲。 <br/> <br/> 現在，您的本地 Git 倉儲和 GitHub 上的倉儲已經連結起來，並且已設定提交身分，同時使用 "main" 作為主分支名稱。您可以在 Replit 上進行更改、提交和推送，並保持與 GitHub 上的倉儲同步。</p>
+<p style="padding-left: 30px;">為確保使用 "main" 作為主分支名稱，可以在 "git init" 之後加上 "git branch -m main" 指令。這將會將預設的分支名稱從 "master" 改為 "main"。操作流程如下： <br/> <br/> 1. 在 Replit 的終端機（Terminal）中，確定您目前所在的目錄是您想要作為 Git 倉儲的目錄。如果不是，您可以使用 "cd" 指令切換到正確的目錄。 <br/> <br/> 2. 初始化 Git 倉儲： <br/> - 執行指令 "git init"：這會在目前的目錄下初始化一個新的 Git 倉儲。 <br/> <br/> 3. 將預設分支名稱改為 "main"： <br/> - 執行指令 "git branch -m main"：這將把預設分支從 "master" 改為 "main"。 <br/> <br/> 4. 連結到 GitHub 倉儲： <br/> - 在 GitHub 上創建一個空的倉儲（Repository），並取得該倉儲的 URL。 <br/> - 在終端機中，執行指令 "git remote add origin &lt;GitHub倉儲URL&gt;"：這會將您的本地倉儲與 GitHub 倉儲連結起來。 <br/> <br/> 5. 設定提交身分： <br/> - 在 Replit 的右側窗格中，點擊「Secrets」選項卡。 <br/> - 在「Environment variables」區域，設定一個名為 "GIT_AUTHOR_NAME" 的變數，並設定您的名字。 <br/> - 設定一個名為 "GIT_AUTHOR_EMAIL" 的變數，並設定您的郵件地址。 <br/> <br/> 6. 將本地的更改提交到 GitHub： <br/> - 執行指令 "git add ."：將所有更改添加到暫存區。 <br/> - 執行指令 "git commit -m "Initial commit""：將更改提交到本地儲存庫。 <br/> - 執行指令 "git push -u origin main"：將本地的更改推送到 GitHub 倉儲。 <br/> <br/> 現在，您的本地 Git 倉儲和 GitHub 上的倉儲已經連結起來，並且已設定提交身分，同時使用 "main" 作為主分支名稱。您可以在 Replit 上進行更改、提交和推送，並保持與 GitHub 上的倉儲同步。</p>
 <p>第二種方法則是在 Github 先建立好網站倉儲, 可以將 cmsimde 作為倉儲目錄或者作為子模組, 並利用 Github Pages 伺服倉儲中的靜態網站 (也就是 content 目錄中的超文件), 之後再將倉儲 import 進入 Replit 執行倉儲中的動態網站進行內容的編輯與改版.</p>
-<p>注意: 利用 Replit 維護 Github 倉儲時, git add 與 git commit 必須透過 Tools 中的 Git 頁面完成, 然後 git push 則可以在 Git 頁面或 Shell 頁面執行 git push.</p>
-<h3>網際編輯</h3>
+<p>注意: 利用 Replit 維護 Github 倉儲時, git add 與 git commit 必須透過 Tools 中的 Git 頁面完成, 然後 git push 則可以在 Git 頁面或 Shell 頁面執行 git push.</p><h3>網際編輯</h3>
 <p>使用 Replit 建立網際編輯環境</p>
 <p>以帳號登入 Replit (例如: wcms 或 Github/Gmail 帳號）</p>
 <p>利用 import from Github 將 cmsimde 倉儲導入, 且使用 Python template</p>
 <p>若倉儲將 cmsimde 作為子模組, 則導入後需要以 git submodule update --init --recursive 導入所有子模組</p>
 <p>下載子模組之後, 先以 Run 執行 main.py 啟動, 會顯示缺少模組, 之後再安裝下列模組 (若直接安裝下列模組, 將會出現 gevent 模組啟動錯誤)</p>
 <p>在 Shell 區以 pip3 install flask flask_cors bs4 lxml pelican markdown pyopenssl gevent 安裝啟動 cmsimde 編輯環境所需的 Python3 模組</p>
-<p>開啟 repl 中的隱藏檔案後, 在 .replit 中的 [env] 區域加入 GIT_USER_NAME 與 GIT_USER_EMAIL 設定</p>
+<p>開啟 repl 中的隱藏檔案後, 在 .replit 中的 [env] 區域加入 GIT_AUTHOR_NAME 與 GIT_AUTHOR_EMAIL 設定</p>
 <p>Run main.py 後, 以瀏覽器開啟 cmsimde 編輯環境後, 進入 Config 修改管理者密碼後, 測試是否可以修改網站內容</p>
+<p>Convert 之後以 git tool 執行 git commit and git push</p>
 <p></p>
 <p></p><h2>英文單字</h2>
 <p>2016 年出版的 <a href="https://link.springer.com/book/10.1007/978-981-10-3277-6"> Programming with Python </a> <span> </span> 書中收集 2244 個英文 <a href="/downloads/words_2016_programming_with_python.txt"> 單字出現次數 </a> , 以及各單字的 <a href="/downloads/words_2016_programming_with_python.html"> 查詢頁面 </a> .</p>
@@ -552,7 +552,7 @@ import {
 <p style="padding-left: 30px;"><a href="https://www.brookings.edu/wp-content/uploads/2021/10/How-England-implemented-its-computer-science-education-program-FINAL.pdf">https://www.brookings.edu/wp-content/uploads/2021/10/How-England-implemented-its-computer-science-education-program-FINAL.pdf</a></p>
 <p style="padding-left: 30px;"><a href="https://www.brookings.edu/wp-content/uploads/2021/10/How-BC-implemented-its-CS-education-program-FINAL.pdf">https://www.brookings.edu/wp-content/uploads/2021/10/How-BC-implemented-its-CS-education-program-FINAL.pdf</a></p>
 <p style="padding-left: 30px;"><a href="https://zh.wikibooks.org/zh-tw/%E5%A4%A7%E9%99%86%E5%8F%B0%E6%B9%BE%E8%AE%A1%E7%AE%97%E6%9C%BA%E6%9C%AF%E8%AF%AD%E5%AF%B9%E7%85%A7%E8%A1%A8">台灣與中國大陸計算機術語對照表</a></p>
-<p style="padding-left: 30px;"><a href="https://sitcon.org/">學生計算機年會</a></p>
+<p style="padding-left: 30px;"><a href="https://sitcon.org/">學生計算機年會</a> (SITCon, Students' Information Technology Conference)</p>
 <p></p><h1>Computer</h1>
 <p>我們對電腦軟硬體有多少認識? 從學習計算機程式、網際內容管理、電腦輔助設計與實習到協同產品設計實習的過程中, 該如何應用電腦? (眼前的桌上型電腦、筆記型電腦、平板、手機與各種為控制器)</p>
 <p>Physical and Virtual PC (VmWare, Hyper-V, <a href="https://www.virtualbox.org/"> Virtualbox </a> , Parallels)</p>
@@ -633,43 +633,17 @@ import {
  </a>
 </p>
 <h1>Javascript</h1>
-<p>
- 瀏覽器就是你的計算機程式環境
-</p>
-<p>
-<a href="http://jsforcats.com/">
-  http://jsforcats.com/
- </a>
- (貓咪學 JavaScript)
-</p>
-<p>
-<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide">
-  https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide
- </a>
-</p>
-<p>
-<a href="https://eloquentjavascript.net/">
-  https://eloquentjavascript.net/
- </a>
-</p>
-<p>
- 利用 Javascript 寫的 CAD:
- <a href="https://openjscad.xyz/">
-  https://openjscad.xyz/
- </a>
-</p>
-<p>
- 目前的 cmsimde 可以直接在線上編輯 blog, 若 SStatic 出現問題, 可以連同在伺服器中啟動的主程式一併移除:
-</p>
-<p>
- 假設希望移除使用 8445 port 的應用程式:
-</p>
+<p>瀏覽器就是你的計算機程式環境</p>
+<p><a href="http://jsforcats.com/"> http://jsforcats.com/ </a> (貓咪學 JavaScript)</p>
+<p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide"> https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide </a></p>
+<p><a href="https://eloquentjavascript.net/"> https://eloquentjavascript.net/ </a></p>
+<p>利用 Javascript 寫的 CAD: <a href="https://openjscad.xyz/"> https://openjscad.xyz/ </a></p>
+<p>目前的 cmsimde 可以直接在線上編輯 blog, 若 SStatic 出現問題, 可以連同在伺服器中啟動的主程式一併移除:</p>
+<p>假設希望移除使用 8445 port 的應用程式:</p>
 <pre class="brush:js;auto-links:false;toolbar:false" contenteditable="false">sudo kill -9 `sudo lsof -t -i:8445`</pre>
-<p>
-</p>
-<p>
-</p>
-<h1>Brython_env</h1>
+<p><a href="https://nfuedu-my.sharepoint.com/:u:/g/personal/yen_nfu_edu_tw/ERlB8qmkNoVPt8T_8tGGUF0BpDC0_21IaCQdJ5mz3HuJBw?e=l6twPd">jstlviewer.7z</a> (需要下載密碼)</p>
+<p></p>
+<p></p><h1>Brython_env</h1>
 <p>Browser Python - Python in your Browser</p>
 <p>在網頁中建立 Brython 程式環境:</p>
 <pre class="brush:html;auto-links:false;toolbar:false" contenteditable="false">&lt;!-- 導入 brython 程式庫 --&gt;
@@ -1604,9 +1578,11 @@ doc["threejsblock"].bind("click", threejsblock.do)
 <p><a href="https://www.programiz.com/c-programming"> https://www.programiz.com/c-programming </a></p>
 <p><a href="http://hades.mech.northwestern.edu/images/6/68/CBook.pdf">http://hades.mech.northwestern.edu/images/6/68/CBook.pdf</a></p>
 <p>Linux:</p>
-<p style="padding-left: 30px;"><a href="https://sysprog21.github.io/lkmpg/">https://sysprog21.github.io/lkmpg/</a> </p>
-<p style="padding-left: 30px;"><a href="https://sysprog21.github.io/cpumemory-zhtw/">https://sysprog21.github.io/cpumemory-zhtw/</a> </p>
-<p style="padding-left: 30px;"><a href="https://github.com/sysprog21/">https://github.com/sysprog21/</a> </p>
+<p style="padding-left: 30px;"><a href="https://sysprog21.github.io/lkmpg/">https://sysprog21.github.io/lkmpg/</a> (The Linux Kernel Module Programming Guide)</p>
+<p style="padding-left: 30px;">每位程式開發者都該有的記憶體知識</p>
+<p style="padding-left: 60px;"><a href="https://sysprog21.github.io/cpumemory-zhtw/">https://sysprog21.github.io/cpumemory-zhtw/</a> (中文)</p>
+<p style="padding-left: 60px;"><a href="https://www.akkadia.org/drepper/cpumemory.pdf">https://www.akkadia.org/drepper/cpumemory.pdf</a> (英文)</p>
+<p style="padding-left: 30px;"><a href="https://github.com/sysprog21/">https://github.com/sysprog21/</a></p>
 <p>Arduino:</p>
 <p style="padding-left: 30px;"><a href="https://docs.arduino.cc/"> https://docs.arduino.cc/ </a></p>
 <p style="padding-left: 30px;"><a href="https://www.tinkercad.com/circuits"> https://www.tinkercad.com/circuits </a></p>
